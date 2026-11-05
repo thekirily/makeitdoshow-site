@@ -1,0 +1,4 @@
+FILM LAUNCH IS BLOCKED:
+- The existing Make It Do PostHog public project key has not been configured in data/site.json.
+- Printed ordering is disabled. Publish the existing Gumroad draft and verify fulfillment before enabling commerce.
+- Gumroad email delivery is disabled. Publish the free sheet/cards drafts before enabling it.
