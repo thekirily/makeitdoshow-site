@@ -23,4 +23,4 @@ The existing product drafts and missing analytics configuration are external lau
 
 A direct PDF content audit found the supplied 1949 free sheet blank (861 bytes). It was rebuilt here from `data/years.json`, with dates and large print. The 1970 original has three pages, so download labels now use measured page counts rather than a blanket two-page claim. All 41 original paid booklet interiors were also checked: each has 20 pages and extractable text. These checks do not establish print quality.
 
-The separate-runner CI passed with performance 99–100 and accessibility 100 on all six audited views. See `evidence/lighthouse/summary.json` and `ci/` for the reports; the measured source hash matches the site. No public deployment was performed.
+The separate-runner CI passed with performance 97–100 and accessibility 100 on all six audited views. See `evidence/lighthouse/summary.json` and `ci-current/` for the reports; the measured source hash matches the site. No public deployment was performed.

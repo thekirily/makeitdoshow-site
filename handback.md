@@ -34,14 +34,14 @@ Lighthouse 13.6.0 passed on a separate free GitHub Actions runner. **Accessibili
 
 | View | Performance | LCP | Total blocking time |
 |---|---:|---:|---:|
-| Home · mobile | 99 | 1.19 s | 93 ms |
-| Home · desktop | 100 | 0.41 s | 0 ms |
-| 1953 prices · mobile | 100 | 0.90 s | 0 ms |
-| Booklet · mobile | 99 | 1.96 s | 12 ms |
+| Home · mobile | 97 | 1.53 s | 100 ms |
+| Home · desktop | 100 | 0.38 s | 0 ms |
+| 1953 prices · mobile | 100 | 0.90 s | 2 ms |
+| Booklet · mobile | 99 | 2.03 s | 11 ms |
 | Gifts · mobile | 100 | 0.90 s | 0 ms |
-| 1950s life · mobile | 100 | 0.90 s | 0 ms |
+| 1950s life · mobile | 100 | 0.95 s | 0 ms |
 
-[Successful CI run](https://github.com/thekirily/makeitdoshow-site/actions/runs/42071688812) · [Machine-readable summary](evidence/lighthouse/summary.json) · [Raw reports](evidence/lighthouse/ci). The source fingerprint matches the delivered site. These are simulated lab checks against a local HTTP server, not live CDN or field measurements. PostHog and commerce are disabled in the measured build.
+[Successful CI run](https://github.com/thekirily/makeitdoshow-site/actions/runs/42072944731) · [Machine-readable summary](evidence/lighthouse/summary.json) · [Raw reports](evidence/lighthouse/ci-current). A prior separate-runner pass scored 99–100 performance and is also retained in `ci/`; the current pass scored 97–100. The source fingerprint matches the delivered site. These are simulated lab checks against a local HTTP server, not live CDN or field measurements. PostHog and commerce are disabled in the measured build.
 
 The shared eight-core local host had load averages up to 29 and unstable results: home-mobile scores 58, 91, and 84; booklet-mobile 71, 98, and 94. Those raw runs remain under `run-1`, `run-2`, and `run-3`, with [local medians](evidence/lighthouse/local-summary.json). The separate-runner result is reported with its own environment, rather than selecting the best local score.
 

@@ -5,34 +5,34 @@
     {
       "name": "home-mobile",
       "load_average_start": [
-        0.2509765625,
-        0.09619140625,
-        0.03173828125
+        0.703125,
+        0.17578125,
+        0.05859375
       ],
       "load_average_end": [
-        0.6923828125,
-        0.216796875,
-        0.07421875
+        1.05712890625,
+        0.32958984375,
+        0.115234375
       ],
       "page": "/",
       "device": "mobile",
       "scores": {
-        "performance": 99,
+        "performance": 97,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 1186,
-      "LCP_ms": 1186,
-      "TBT_ms": 93,
+      "FCP_ms": 1527,
+      "LCP_ms": 1527,
+      "TBT_ms": 100,
       "CLS": 0,
       "transfer_bytes": 166667,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:09:09.497Z",
+      "fetch_time": "2026-11-05T17:16:51.628Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2192.5,
+        "benchmarkIndex": 1616,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -100,14 +100,14 @@
     {
       "name": "home-desktop",
       "load_average_start": [
-        0.6923828125,
-        0.216796875,
-        0.07421875
+        1.05712890625,
+        0.32958984375,
+        0.115234375
       ],
       "load_average_end": [
-        0.6806640625,
-        0.23876953125,
-        0.08447265625
+        1.294921875,
+        0.4013671875,
+        0.140625
       ],
       "page": "/",
       "device": "desktop",
@@ -117,17 +117,17 @@
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 262,
-      "LCP_ms": 405,
+      "FCP_ms": 260,
+      "LCP_ms": 383,
       "TBT_ms": 0,
       "CLS": 0.0001,
       "transfer_bytes": 251343,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:09:22.068Z",
+      "fetch_time": "2026-11-05T17:17:05.799Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2626.5,
+        "benchmarkIndex": 2496.5,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -195,14 +195,14 @@
     {
       "name": "year-1953-mobile",
       "load_average_start": [
-        0.6806640625,
-        0.23876953125,
-        0.08447265625
+        1.294921875,
+        0.4013671875,
+        0.140625
       ],
       "load_average_end": [
-        0.57568359375,
-        0.23046875,
-        0.08349609375
+        1.1689453125,
+        0.40478515625,
+        0.14453125
       ],
       "page": "/1953/",
       "device": "mobile",
@@ -212,17 +212,17 @@
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 904,
-      "LCP_ms": 904,
-      "TBT_ms": 0,
+      "FCP_ms": 903,
+      "LCP_ms": 903,
+      "TBT_ms": 2,
       "CLS": 0.0104,
       "transfer_bytes": 138259,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:09:33.231Z",
+      "fetch_time": "2026-11-05T17:17:17.133Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2569,
+        "benchmarkIndex": 2487.5,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -290,14 +290,14 @@
     {
       "name": "booklet-mobile",
       "load_average_start": [
-        0.57568359375,
-        0.23046875,
-        0.08349609375
+        1.1689453125,
+        0.40478515625,
+        0.14453125
       ],
       "load_average_end": [
-        0.48681640625,
-        0.22265625,
-        0.08251953125
+        1.05078125,
+        0.41748046875,
+        0.1533203125
       ],
       "page": "/your-year/",
       "device": "mobile",
@@ -307,17 +307,17 @@
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 966,
-      "LCP_ms": 1955,
-      "TBT_ms": 12,
+      "FCP_ms": 965,
+      "LCP_ms": 2029,
+      "TBT_ms": 11,
       "CLS": 0,
       "transfer_bytes": 232340,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:09:44.470Z",
+      "fetch_time": "2026-11-05T17:17:28.462Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2628.5,
+        "benchmarkIndex": 2490,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -385,14 +385,14 @@
     {
       "name": "gifts-mobile",
       "load_average_start": [
-        0.48681640625,
-        0.22265625,
-        0.08251953125
+        1.05078125,
+        0.41748046875,
+        0.1533203125
       ],
       "load_average_end": [
-        0.56640625,
-        0.24853515625,
-        0.09326171875
+        0.888671875,
+        0.4033203125,
+        0.1513671875
       ],
       "page": "/gifts/",
       "device": "mobile",
@@ -402,17 +402,17 @@
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 903,
-      "LCP_ms": 903,
+      "FCP_ms": 902,
+      "LCP_ms": 902,
       "TBT_ms": 0,
       "CLS": 0,
       "transfer_bytes": 185917,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:09:55.522Z",
+      "fetch_time": "2026-11-05T17:17:39.725Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2689.5,
+        "benchmarkIndex": 2498.5,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -480,14 +480,14 @@
     {
       "name": "life-mobile",
       "load_average_start": [
-        0.56640625,
-        0.24853515625,
-        0.09326171875
+        0.888671875,
+        0.4033203125,
+        0.1513671875
       ],
       "load_average_end": [
-        1.14892578125,
-        0.38818359375,
-        0.140625
+        1.3740234375,
+        0.5224609375,
+        0.193359375
       ],
       "page": "/1950s-life/",
       "device": "mobile",
@@ -497,17 +497,17 @@
         "best-practices": 100,
         "seo": 100
       },
-      "FCP_ms": 903,
-      "LCP_ms": 903,
+      "FCP_ms": 949,
+      "LCP_ms": 949,
       "TBT_ms": 0,
       "CLS": 0.0004,
       "transfer_bytes": 133502,
       "lighthouse_version": "13.6.0",
-      "fetch_time": "2026-11-05T17:10:06.532Z",
+      "fetch_time": "2026-11-05T17:17:50.934Z",
       "environment": {
         "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Mobile Safari/537.36",
         "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
-        "benchmarkIndex": 2653.5,
+        "benchmarkIndex": 2335,
         "credits": {
           "axe-core": "4.14.0"
         }
@@ -574,7 +574,9 @@
     }
   ],
   "measurement_host": "GitHub Actions ubuntu-24.04, separate public-repository runner",
-  "ci_run_url": "https://github.com/thekirily/makeitdoshow-site/actions/runs/42071688812",
-  "measured_commit": "505bc21966549a9d75e5c32b5cb6797b9152aa5c",
-  "local_variability": "Preserved in local-summary.json and run-1, run-2, run-3; local mobile home scores were 58, 91, 84 under shared-host load."
+  "ci_run_url": "https://github.com/thekirily/makeitdoshow-site/actions/runs/42072944731",
+  "measured_commit": "a7b2f023f162553c3a3820dd771aa461da37da61",
+  "previous_ci_run": "https://github.com/thekirily/makeitdoshow-site/actions/runs/42071688812",
+  "previous_ci_reports": "ci/",
+  "local_variability": "Local mobile home scores 58, 91, 84 are retained in run-1, run-2 and run-3. The shared eight-core host had load averages up to 29."
 }
