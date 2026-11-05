@@ -10,7 +10,7 @@ Start with [home on phone](../evidence/screenshots/home-phone.png), [desktop](..
 | Real sample | Four-page PDF excerpt, with three interior-page previews |
 | Shared atmosphere | Existing color film, warm paper, green controls, large type, self-hosted readable fonts |
 | Metadata | Canonical URLs, unique descriptions, Open Graph, sitemap, matching JSON-LD |
-| Local speed | Six raw Lighthouse JSON/HTML reports plus summary |
+| Local speed | Six separate-runner Lighthouse JSON/HTML reports plus retained local variability |
 | Browser behavior | 312 assertions at widths 320, 390, 768, 1440, and 1920 |
 | Conversion correctness | Six unit tests plus intercepted browser capture and checkout tests |
 | Public state | `main` remains untouched by this work; Pages still serves it |
@@ -22,3 +22,5 @@ Do not interpret automated accessibility 100 as a human usability study. Screen 
 The existing product drafts and missing analytics configuration are external launch gates. They do not prevent reviewing the free experience, source accuracy, visual system, or code. Details are in [launch.md](launch.md).
 
 A direct PDF content audit found the supplied 1949 free sheet blank (861 bytes). It was rebuilt here from `data/years.json`, with dates and large print. The 1970 original has three pages, so download labels now use measured page counts rather than a blanket two-page claim. All 41 original paid booklet interiors were also checked: each has 20 pages and extractable text. These checks do not establish print quality.
+
+The separate-runner CI passed with performance 99–100 and accessibility 100 on all six audited views. See `evidence/lighthouse/summary.json` and `ci/` for the reports; the measured source hash matches the site. No public deployment was performed.

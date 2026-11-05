@@ -18,7 +18,7 @@ The film doors preserve the existing QR target: `/01/?s=q`; description is `/01/
 
 Completed signups and orders come from authenticated Gumroad sales, never a thank-you URL. A free download is not called a signup, and a checkout click is not called an order. The server importer supports pagination, deterministic event UUIDs, and separate refunds; a scheduled workflow can run on `main` after configuration. Six unit tests and intercepted browser requests cover these distinctions.
 
-**Not live:** the supplied Gumroad products are drafts, the existing Make It Do PostHog public key/host has not been located, and real fulfillment must be confirmed. The supplied tracking folder uses an older product's Umami property, which was not reused. Repository secret/variable listings were empty. The requested PostHog configuration path was asked for without requesting a secret in chat. Checkout and email signup remain closed; free downloads work now. The supplier decision prefers Prodigi for the booklet while the supplied robot uses Lulu; the site does not pretend that adapter is proven. Details: [launch gates](docs/launch.md) and [tracking](docs/tracking.md).
+**Not live:** the supplied Gumroad products are drafts, the existing Make It Do PostHog public key/host has not been located, and real fulfillment must be confirmed. The supplied tracking folder uses an older product's Umami property, which was not reused. Repository secret/variable listings were empty. Checkout and email signup remain closed; free downloads work now. The supplier decision prefers Prodigi for the booklet while the supplied robot uses Lulu; the site does not pretend that adapter is proven. Details: [launch gates](docs/launch.md) and [tracking](docs/tracking.md).
 
 ## Verification and screenshots
 
@@ -30,7 +30,20 @@ Static verification passed: 1,964 internal references, all 46 year downloads, ca
 | Desktop, 1440 px | [Screenshot](evidence/screenshots/home-desktop.png) | [1953](evidence/screenshots/year-1953-desktop.png) | [Booklet](evidence/screenshots/booklet-desktop.png) |
 | TV, 1920 px | [Screenshot](evidence/screenshots/home-tv.png) | [1953](evidence/screenshots/year-1953-tv.png) | [Booklet](evidence/screenshots/booklet-tv.png) |
 
-Lighthouse 13.6.0 reports are in [evidence/lighthouse](evidence/lighthouse). All measured accessibility scores are 100. Local speed runs varied substantially while the shared eight-core host had load averages up to 29; those raw reports are retained under `run-1`, `run-2`, and `run-3`. The separate GitHub Actions measurement is being collected before final delivery. All speed checks use a local HTTP server and simulated throttling; none measures live CDN or field performance. PostHog and commerce are disabled in the measured build.
+Lighthouse 13.6.0 passed on a separate free GitHub Actions runner. **Accessibility, best practices, and SEO scored 100 for every audited view.**
+
+| View | Performance | LCP | Total blocking time |
+|---|---:|---:|---:|
+| Home · mobile | 99 | 1.19 s | 93 ms |
+| Home · desktop | 100 | 0.41 s | 0 ms |
+| 1953 prices · mobile | 100 | 0.90 s | 0 ms |
+| Booklet · mobile | 99 | 1.96 s | 12 ms |
+| Gifts · mobile | 100 | 0.90 s | 0 ms |
+| 1950s life · mobile | 100 | 0.90 s | 0 ms |
+
+[Successful CI run](https://github.com/thekirily/makeitdoshow-site/actions/runs/42071688812) · [Machine-readable summary](evidence/lighthouse/summary.json) · [Raw reports](evidence/lighthouse/ci). The source fingerprint matches the delivered site. These are simulated lab checks against a local HTTP server, not live CDN or field measurements. PostHog and commerce are disabled in the measured build.
+
+The shared eight-core local host had load averages up to 29 and unstable results: home-mobile scores 58, 91, and 84; booklet-mobile 71, 98, and 94. Those raw runs remain under `run-1`, `run-2`, and `run-3`, with [local medians](evidence/lighthouse/local-summary.json). The separate-runner result is reported with its own environment, rather than selecting the best local score.
 
 ## What would prove this wrong
 
@@ -52,4 +65,4 @@ From a clean, committed `launch` checkout, the owner runs this at film upload:
 ./scripts/publish.sh
 ```
 
-It checks the launch gates, verifies the live Gumroad products when enabled, runs static checks, fetches `main`, and makes an ordinary fast-forward push. It stops rather than overwriting concurrent changes. It currently refuses publication because the configuration and product gates above remain unresolved. The agent did not run it. No account was opened and no money was spent.
+It checks the launch gates, verifies the live Gumroad products when enabled, runs static checks, fetches `main`, and merges the reviewed launch PR with a matching-head guard. It does not force-push or overwrite concurrent edits. It uses GitHub’s PR merge route because the existing shell credential cannot introduce workflow files through a direct push. It currently refuses publication because the configuration and product gates above remain unresolved. The agent did not run it. No account was opened and no money was spent.
