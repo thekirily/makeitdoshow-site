@@ -21,5 +21,13 @@
       "control": {},
       "variant": {}
     }
-  }
+  },
+  "banner": "Every number has a source. Every cover has a name.",
+  "banner_years_variant": "Born between 1930 and 1970? Your year is printed and waiting.",
+  "orders_api": "",
+  "checkout_origins": [
+    "https://www.paypal.com",
+    "https://www.sandbox.paypal.com",
+    "https://payhip.com"
+  ]
 }
