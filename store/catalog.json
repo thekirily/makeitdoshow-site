@@ -1,0 +1,21 @@
+{
+  "_note": "Single source for the store pages and the order robot. Prices in US cents, U.S. shipping included, sales tax not added (see handback). Print SKUs are Lulu pod_package_ids.",
+  "currency": "USD",
+  "ship_to": ["US"],
+  "years": [1930, 1970],
+  "name_max": 24,
+  "products": {
+    "youryear": {
+      "title": "Your Year, in Color",
+      "price_cents": 4900,
+      "extra_copy_cents": 2900,
+      "max_lines": 3,
+      "pod_package_id": "0850X1100FCPRESS080CW444MXX",
+      "interior_pages": 20,
+      "trim_in": [8.5, 11],
+      "cover_in": [17.25, 11.25],
+      "shipping_level": "MAIL",
+      "spec": "20 pages, 8½ × 11 in, saddle-stitched with two staples, full colour on 80 lb coated white paper, matte cover"
+    }
+  }
+}

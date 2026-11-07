@@ -16,3 +16,37 @@
 @media(max-width:280px){.receipt{transform:none;margin:0}.receipt dl>div{flex-wrap:wrap}}
 select{min-width:0;max-width:100%}
 @media(max-width:280px){.order-panel{padding:25px 12px}select{padding:12px 28px 12px 10px}}
+/* ---- store (store-1108): a museum shop, not a SaaS hero. One object, its caption, her year. ---- */
+.shop-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);grid-template-areas:'gallery head' 'gallery panel';grid-template-rows:auto 1fr;column-gap:56px;padding:24px 0 64px;align-items:start}.shop-head{grid-area:head}.shop-gallery{grid-area:gallery}.shop-panel{grid-area:panel}
+.shop-main img{border-radius:2px}.shop-main figcaption{font-style:italic}
+.shop-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}.shop-thumbs img{border:1px solid var(--line);background:#fff;box-shadow:0 1px 0 #d9d4c4}.shop-thumbs figcaption{padding-top:6px;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.shop-note{font-size:15px;line-height:1.55;color:var(--muted);margin-top:18px;border-top:1px solid var(--line);padding-top:12px}
+.shop-head h1{font-size:clamp(46px,4.6vw,68px);margin-bottom:16px}.shop-head .lede{font-size:22px}
+.shop-price{display:flex;align-items:baseline;gap:14px;font-size:17px;color:var(--muted);border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:12px 0;margin:6px 0 22px}.shop-price span{font:550 40px/1 var(--serif);letter-spacing:-.03em;color:var(--ink)}
+.shop-buy fieldset{border:0;padding:0;margin:0 0 6px}.shop-buy legend{font:700 14px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.shop-buy label{display:block;font-size:17px;font-weight:700;margin:10px 0 6px}.shop-buy select,.shop-buy input{width:100%;min-height:52px;padding:10px 14px;border:1px solid #8d8f82;background:var(--white);border-radius:2px;font-size:20px;color:var(--ink)}
+.shop-buy input:invalid:not(:placeholder-shown){border-color:#a14919}.shop-hint{font-size:15px;color:var(--muted);margin:6px 0 0}
+.shop-preview{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center;margin:20px 0 6px}.shop-cover{position:relative;box-shadow:0 10px 24px -14px rgba(30,27,24,.6),0 1px 2px rgba(30,27,24,.3)}
+.shop-cover-name{position:absolute;left:7.65%;bottom:12.05%;margin:0;font:700 10px/1.2 var(--sans);color:#efe6d2;white-space:nowrap}.shop-preview-cap{font-size:15px;line-height:1.5;color:var(--muted);margin:0}
+.shop-fact{font:italic 18px/1.5 var(--serif);color:var(--ink);margin:8px 0 14px;min-height:1px}
+.shop-second{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin:10px 0 20px}.shop-second summary{cursor:pointer;font-size:18px;min-height:44px;display:flex;align-items:center;gap:8px}.shop-second summary b{color:var(--gold)}
+.shop-pay{width:100%;justify-content:center;font-size:20px;min-height:60px}.shop-error{background:#f6e3d6;border-left:4px solid #a14919;padding:10px 14px;font-size:17px}
+.shop-assure{list-style:none;padding:0;margin:18px 0 0;font-size:16px;line-height:1.5}.shop-assure li{padding:8px 0 8px 22px;border-bottom:1px dotted var(--line);position:relative}.shop-assure li:before{content:"—";position:absolute;left:0;color:var(--gold)}
+.shop-grey{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;border-top:1px solid var(--line)}
+.shop-big{font:550 26px/1.35 var(--serif);letter-spacing:-.02em;border-left:3px solid var(--gold);padding-left:20px;margin:28px 0}.shop-big span{display:block;font-size:clamp(56px,6vw,88px);line-height:1;letter-spacing:-.05em;color:var(--green)}
+.shop-page img,.shop-hers img{border:1px solid var(--line);background:#fff;box-shadow:0 18px 30px -22px rgba(30,27,24,.55)}
+.shop-leaf{border-top:1px solid var(--line)}.shop-leaf-head{max-width:760px}.shop-video{width:100%;height:auto;display:block;background:#efebe0}
+.shop-hers{display:grid;grid-template-columns:.6fr 1fr;gap:64px;align-items:center;border-top:1px solid var(--line)}
+.shop-arrives{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;border-top:1px solid var(--line)}.shop-spec{margin:0;border-top:1px solid var(--ink)}.shop-spec div{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:12px 0;border-bottom:1px solid var(--line)}.shop-spec dt{font:700 14px/1.9 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.shop-spec dd{margin:0}
+.shop-faq details{border-bottom:1px solid var(--line);padding:6px 0}.shop-faq summary{min-height:48px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+.shop-close{text-align:center;border-top:1px solid var(--line);padding-bottom:96px}.shop-close h2{font-size:clamp(44px,5vw,72px)}
+.shop-intro{max-width:880px}.shop-shelf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px 56px;padding:24px 0 48px}
+.shop-item-pic{display:block;background:#efebe0}.shop-label{border-top:1px solid var(--ink);margin-top:18px;padding-top:12px;max-width:520px}.shop-label h3{font-size:28px;margin:0 0 8px}.shop-label h3 a{text-decoration:none;color:var(--ink)}
+.shop-medium{font-style:italic;margin:0 0 4px}.shop-dims,.shop-cost{font-size:16px;color:var(--muted);margin:0}.shop-cost{color:var(--ink);font-weight:700;margin-top:6px}.shop-status{font-size:15px;color:#7a3a14;margin-top:8px}
+@media (max-width:900px){.shop-grey,.shop-hers,.shop-arrives{grid-template-columns:1fr;gap:32px}.shop-shelf{grid-template-columns:1fr}.shop-hero{grid-template-columns:1fr;grid-template-areas:'head' 'gallery' 'panel';row-gap:8px}.shop-head .shop-price{margin-bottom:12px}.shop-thumbs{display:none}.shop-note{margin-bottom:20px}}
+@media (max-width:680px){.shop-preview{grid-template-columns:120px 1fr}.shop-spec div{grid-template-columns:1fr;gap:2px}.shop-thumbs{gap:10px}}
+@media (max-width:680px){.masthead{flex-wrap:wrap;gap:10px;padding:16px 0}.masthead nav{gap:16px;font-size:16px;flex-wrap:wrap}.masthead .nav-order{padding:6px 12px}.shop-head h1{font-size:44px}.shop-head .lede{font-size:19px}}
+.shop-nameline{background:#1e1b18;color:#efe6d2;font:700 21px/1.25 var(--sans);padding:14px 16px;margin:0 0 10px;border-radius:2px;overflow-wrap:anywhere}
+@media (max-width:680px){.masthead nav a[href="/gifts/"],.masthead nav a[href="/1950s-life/"]{display:none}.shop-preview{grid-template-columns:130px 1fr;gap:14px}.shop-nameline{font-size:18px;padding:10px 12px}}
+html,body{overflow-x:clip}.acc{color:var(--gold)}.button:active,.shop-pay:active{transform:translateY(1px);filter:brightness(.92)}button:disabled,.button[aria-disabled=true]{opacity:.55;cursor:not-allowed}.shop-pay{white-space:nowrap}.shop-label .shop-label-title{font-size:28px;margin:0 0 8px;letter-spacing:-.025em}.shop-label-title a{text-decoration:none;color:var(--ink)}
+.shop-item-pic img{aspect-ratio:3/2;object-fit:contain;background:#efebe0}
