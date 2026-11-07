@@ -1,4 +1,4 @@
-/* Make It Do: explicit, anonymous events. No third-party SDK, replay, or form capture. */
+/* Make It Do: explicit visit events. No third-party SDK, replay, or form capture. */
 (() => {
   'use strict';
   const cfg = JSON.parse(document.getElementById('site-config').textContent);
@@ -158,7 +158,7 @@
     if (choice) choice.hidden = !cfg.posthog_project_key || signalBlocked() || Boolean(memoryConsent || local.get('mid_analytics_consent')) || local.get('mid_analytics_off') === '1';
     if (toggle) {
       toggle.textContent = trackingBlocked() ? 'Allow visit analytics' : 'Turn off visit analytics';
-      document.getElementById('analytics-status').textContent = signalBlocked() ? 'Visit analytics are off because your browser sends DNT or GPC.' : !cfg.posthog_project_key ? 'Analytics are not configured on this version of the site.' : trackingBlocked() ? 'Visit analytics are off in this browser.' : 'Anonymous visit analytics are on.';
+      document.getElementById('analytics-status').textContent = signalBlocked() ? 'Visit analytics are off because your browser sends DNT or GPC.' : !cfg.posthog_project_key ? 'Analytics are not configured on this version of the site.' : trackingBlocked() ? 'Visit analytics are off in this browser.' : 'Visit analytics are on.';
     }
   }
   function choose(value) {
