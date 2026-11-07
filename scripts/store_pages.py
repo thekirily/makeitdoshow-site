@@ -52,7 +52,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
 
     def line_fields(n, hidden=False):
         return (f'<fieldset class="shop-line" id="line{n}"{" hidden" if hidden else ""}><legend>{"Her" if n == 1 else "The second"} booklet</legend>'
-                f'<label for="year{n}">Year she was born</label><select id="year{n}" name="year{n}" {"required" if n == 1 else ""} data-line="{n}">{opts}</select>'
+                f'<label for="{"book-year" if n == 1 else "year2"}">Year she was born</label><select id="{"book-year" if n == 1 else "year2"}" name="year{n}" {"required" if n == 1 else ""} data-line="{n}">{opts}</select>'
                 f'<label for="name{n}">Name for the cover</label><input id="name{n}" name="name{n}" maxlength="24" autocomplete="off" '
                 f'{"required" if n == 1 else ""} data-line="{n}" placeholder="Margaret" aria-describedby="hint{n}">'
                 f'<p class="shop-hint" id="hint{n}">It prints as “For Margaret, born 1953”. Up to 24 letters.</p></fieldset>')

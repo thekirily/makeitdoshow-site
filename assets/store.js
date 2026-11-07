@@ -10,7 +10,7 @@
     var big = document.getElementById('bigfact');
     var total = document.getElementById('total');
     var second = document.getElementById('second');
-    var y1 = document.getElementById('year1'), n1 = document.getElementById('name1');
+    var y1 = document.getElementById('book-year'), n1 = document.getElementById('name1');
     var y2 = document.getElementById('year2'), n2 = document.getElementById('name2');
     var ok = /^[A-Za-zÀ-ÖØ-öø-ſ]+(?:[ '’.\-][A-Za-zÀ-ÖØ-öø-ſ]*)*\.?$/;
     function tidy(s) { return s.replace(/\s+/g, ' ').trim().replace(/'/g, '’'); }

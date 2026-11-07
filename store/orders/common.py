@@ -8,7 +8,7 @@ import json, os, re, time, uuid, urllib.request, urllib.error
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STORE = os.path.dirname(HERE)
-CATALOG = json.load(open(os.path.join(STORE, 'catalog.json')))
+CATALOG = json.load(open(os.path.join(os.path.dirname(STORE), 'data', 'store-catalog.json')))
 UA = 'makeitdo-orders/1.0 (+https://makeitdoshow.com)'  # Cloudflare in front of Lulu refuses Python's default UA
 
 LOG_PATH = os.environ.get('ORDER_LOG', os.path.join(STORE, 'var', 'order-log.jsonl'))
