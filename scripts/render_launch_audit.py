@@ -58,7 +58,7 @@ Intentional noindex doors, aliases, thanks and 404 retain low SEO scores: **lite
 | Internal links/assets/fragments | Original static verifier previously reported 1,964 references; baseline linkinator raw output retained | 2,178 static references, 65 HTML pages, all 46 year PDFs; linkinator all routes, both UAs, CSS and fragments | **PASS staged internal**, canonical same-site URLs explicitly mapped to preview; public failures separately retained |
 | External links | One USPS historical-rate PDF URL 404 | Fixed to official HTML source; full all-route linkinator output retained | **NOT an anonymous all-links PASS**: Google account permissions is authenticated (401). Public same-site canonical/social destinations remain 404 until publication |
 | Nu valid HTML | One figure-content-order error and one headingless-wrapper warning | 65 files, zero syntax errors; file-origin CSP warnings retained | **PASS syntax**; file:// warnings do not establish a runtime policy failure. HTTP-origin Nu attempt refused local host and was not counted as validation |
-| Schema.org | Local JSON parsing; no fresh baseline live test claimed | Live code submissions for all 20 templates: zero errors, zero warnings; localized raw output and screenshot | **PASS schema**, not rich-result eligibility |
+| Schema.org | Local JSON parsing; no fresh baseline live test claimed | Live phone code submissions for all 20 templates: zero errors, zero warnings; localized raw output and screenshot. A separate desktop attempt returned a validator service error and is retained as unverified | **PASS phone schema; desktop service check UNVERIFIED**, not rich-result eligibility |
 | Google Rich Results | Previously untested | Real Chrome code submission rejected: Something went wrong / Log in and try again; screenshot retained | **UNVERIFIED**, not substituted by JSON parsing or Lighthouse |
 | Axe serious/critical | Zero in 38 existing views | Zero in all 40 final views | **PASS automated scope**, not all WCAG criteria |
 | Keyboard | Baseline traversal retained | 40 final tab/Enter/skip/focus scans; year selection and consent via keyboard | **PASS checked flows**, no screen-reader/user study |
@@ -103,6 +103,10 @@ text+="""
 README.md lists pinned setup and commands. Run browser_qa.py, page_budget.py, validate_html.py, and check_links.mjs with preview port 8115; run launch_measure.py serially afterward and assert_lighthouse.py against its summary. CI retains raw artifacts. Use a separate runner for speed checks when available.
 
 [Experiment operation](docs/experiments.md), [email/DNS](DNS-FOR-OWNER.md), [buyer seams](docs/buyer-path-1107.md), [legal checklist](LEGAL.md), [premortem](PREMORTEM.md), [handback](handback-1107.md). Actual ingestion, authenticated checkout/receipt, fulfillment, inbox placement, Google acceptance and final film links are still owner gates.
+
+## Secret-scan classification
+
+The scanner initially flagged four occurrences of the exact public experiment slug. The retained .gitleaks.toml extends the default rules and allows only that exact value in generic-api-key. A regression check confirms an independently generated credential-shaped value is detected. No paths, files or commits are excluded.
 
 ## PR / independent CI
 
