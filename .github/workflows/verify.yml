@@ -2,48 +2,74 @@ name: Verify launch site
 on:
   push:
     branches: [launch]
-    paths-ignore:
-      - 'evidence/**'
-      - 'docs/**'
-      - 'handback.md'
-      - 'README.md'
+    paths-ignore: ['evidence/**', 'docs/**', '**/*.md']
+  pull_request:
+    branches: [launch, main]
+    paths-ignore: ['evidence/**', 'docs/**', '**/*.md']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   verify:
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: npm
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify static routes and conversion logic
+      - name: Install pinned audit tools
+        run: |
+          npm ci --ignore-scripts
+          pip install playwright==1.56.0
+      - name: Verify static routes, conversions and complete page weight
         run: |
           python3 scripts/build.py
           python3 scripts/verify.py
           python3 -m unittest discover -s tests -v
+          python3 scripts/page_budget.py
           node --check assets/site.js
+          node --check assets/experiments.js
           git diff --exit-code -- '*.html' sitemap.xml robots.txt
-      - name: Measure Lighthouse on the launch build
+      - name: Validate HTML with Nu (pinned artifact checksum)
+        run: |
+          python3 scripts/validate_html.py --jar node_modules/vnu-jar/build/dist/vnu.jar
+      - name: Scan all Git history for secrets
+        run: |
+          curl -fLsS https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz -o /tmp/gitleaks.tar.gz
+          curl -fLsS https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_checksums.txt -o /tmp/gitleaks-checksums.txt
+          cd /tmp
+          rg 'gitleaks_8.30.1_linux_x64.tar.gz$' gitleaks-checksums.txt | sha256sum --check
+          tar -xzf gitleaks.tar.gz gitleaks
+          cd "$GITHUB_WORKSPACE"
+          /tmp/gitleaks git --redact --log-opts='--all'
+      - name: Browser, A/B smoke, internal links and strict Lighthouse budgets
         env:
           CHROME_PATH: /usr/bin/google-chrome
         run: |
-          python3 -m http.server 8115 --bind 127.0.0.1 > /tmp/makeitdo-preview.log 2>&1 &
+          python3 -m http.server 8115 --bind 127.0.0.1 > /tmp/preview.log 2>&1 &
           preview_pid=$!
           trap 'kill "$preview_pid"' EXIT
           for attempt in 1 2 3 4 5; do
             if curl --fail --silent http://127.0.0.1:8115/ > /dev/null; then break; fi
             sleep 1
           done
-          python3 scripts/measure.py --directory evidence/lighthouse/ci
+          python3 scripts/functional_qa.py
+          python3 tests/ab_smoke.py
+          python3 tests/signup_smoke.py
+          python3 scripts/audit_browser.py
+          node scripts/check_links.mjs . http://127.0.0.1:8115 ci-internal internal
+          python3 scripts/launch_measure.py --output evidence/launch-1107/ci-lighthouse
+          python3 scripts/assert_lighthouse.py evidence/launch-1107/ci-lighthouse/summary.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: launch-lighthouse
-          path: evidence/lighthouse/ci/
-          retention-days: 14
+          name: launch-standard-evidence
+          path: evidence/launch-1107/
+          retention-days: 30
