@@ -45,6 +45,10 @@
     update();
   }
   var v = document.querySelector('.shop-video');
+  // the poster is set only as the loop nears the screen: browsers fetch a poster eagerly, and it competed with the hero image
+  if (v && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es, o) { if (es[0].isIntersecting) { v.poster = v.getAttribute('data-poster'); o.disconnect(); } }, { rootMargin: '800px' }).observe(v);
+  } else if (v) { v.poster = v.getAttribute('data-poster'); }
   if (v && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { v.preload = 'auto'; v.play().catch(function () {}); } else v.pause(); }); }, { threshold: 0.35 }).observe(v);
   } else if (v) { v.controls = true; }

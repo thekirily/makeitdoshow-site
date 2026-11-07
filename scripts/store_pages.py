@@ -38,7 +38,7 @@ def pic(src, alt, w, h, cls='', lazy=True, sizes='(max-width: 800px) 100vw, 60vw
 
 
 def render(name, alt, lazy=True, cls=''):
-    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, srcset=f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
+    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, srcset=(f'/assets/img/shop/{name}-560.webp 560w, ' if name == 'yy_hero' else '') + f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
 
 
 def build(page, a, crumbs, Y, C, CATALOG):
@@ -61,7 +61,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
            '<input type="hidden" name="product" value="youryear">'
            + line_fields(1) +
            '<div class="shop-preview" aria-live="polite"><div class="shop-cover">'
-           + pic('cover-1953.webp', 'The front cover of the booklet, with the year and the name you choose', 600, 776, 'shop-cover-img', lazy=False, sizes='300px') +
+           + pic('cover-1953.webp', 'The front cover of the booklet, with the year and the name you choose', 600, 776, 'shop-cover-img', lazy=True, sizes='300px') +
            '<p class="shop-cover-name" id="covername" aria-hidden="true">For Margaret, born 1953</p></div>'
            '<div><p class="shop-nameline" id="nameline">For Margaret, born 1953</p>'
            '<p class="shop-preview-cap">The cover as it will print, and its name line enlarged. Type a name and choose a year to see hers.</p></div></div>'
@@ -102,7 +102,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
 
     leaf = ('<section class="section shop-leaf" id="inside"><div class="shop-leaf-head"><p class="eyebrow">All twenty pages</p><h2>Leaf through the 1953 edition.</h2>'
             '<p>The prices, the paycheck, the names in the nursery, two recipes from the government’s 1950 kitchen, and real color film. Every year is its own edition, with its own numbers.</p></div>'
-            '<figure><video class="shop-video" muted loop playsinline preload="none" poster="/assets/img/shop/leaf-1953-poster.webp" width="1100" height="740" '
+            '<figure><video class="shop-video" muted loop playsinline preload="none" data-poster="/assets/img/shop/leaf-1953-poster.webp" width="1100" height="740" '
             'aria-label="The twenty pages of the 1953 booklet, spread by spread"><source src="/assets/img/shop/leaf-1953.mp4" type="video/mp4"></video>'
             '<figcaption>The real pages, in order. It plays without sound.</figcaption></figure></section>')
 
