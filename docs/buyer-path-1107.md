@@ -14,3 +14,5 @@ Real Chrome navigations and screenshots are retained in [buyer-path](../evidence
 | Follow-up / printing | No configured actual follow-up/receipt sequence in this repo. The handback names an unresolved print adapter/supplier seam. | **UNVERIFIED**. Owner decides follow-up purpose, sender, timing and suppression, and verifies print fulfillment. No invented welcome message or delivery promise was added. |
 
 Visible changes of look/person: YouTube app/chrome → custom warm-paper site → Old Porch Press Gumroad domain and Gumroad-hosted checkout → Gumroad receipt/download environment → support Gmail → chosen printer/shipping service. The final film's identity and actual email/checkout presentation remain unavailable. The desired promise continuity cannot be signed off across these hidden seams.
+
+Gumroad integration discovery returned no match in this search. The [plugin directory](https://chatgpt.com/plugins) may contain other integrations; no authenticated receipt-preview route was available in this session.

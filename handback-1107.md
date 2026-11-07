@@ -11,20 +11,20 @@ Branch `launch-standard-1107` starts at `launch` commit `b878192`. The pre-exist
 - A PostHog flag bootstrap, headline/hero/price slots and 250ms fail-open hold. Both variants and timeout/failure are exercised by `tests/ab_smoke`. No flag/test was created or started.
 - Off-by-default Brevo native signup form with separate marketing checkbox, hosted double confirmation, host/config validation and six intercepted submission checks. No API key or remote script ships to the browser.
 - Generated CSP on all 65 HTML routes, exact JSON script hashes, no inline/eval exception, local asset sources and configured vendor origins only. No third-party scripts, so third-party SRI is vacuously satisfied.
-- Enlarged-text reflow defects in navigation, forms, grids and the year selector; keyboard-accessible horizontally scrollable price tables; reduced-motion preference retained. New accessibility statement and footer link.
+- Enlarged-text reflow defects in navigation, forms, grids and the year selector (including a clipped final digit at 200%); keyboard-accessible horizontally scrollable price tables; reduced-motion preference retained. New accessibility statement and footer link.
 - Invalid figure structure, a headingless recipe wrapper, and the broken USPS historical-rate source URL.
 - PR CI, strict Lighthouse gates (with explicit noindex-only SEO exception), complete every-route page-weight budget, Nu HTML, history secret scan, axe/keyboard/zoom, functional/browser, A/B and signup smoke checks.
 - A 15-minute scheduled HTTPS/TLS probe with 21-day expiry warning, deduplicated alert issue and recovery closure. This remains inactive as a schedule until it reaches default `main`; configuration is not an active monitor.
 
 ## Evidence and remaining failures
 
-Read [LAUNCH-AUDIT.md](LAUNCH-AUDIT.md) for before/after numbers, raw outputs, every literal-target failure and test limits; [LEGAL.md](LEGAL.md) for sourced legal gaps; [DNS-FOR-OWNER.md](DNS-FOR-OWNER.md) for the provider comparison and DNS blocker; [PREMORTEM.md](PREMORTEM.md) for ten ranked failure cases. [Buyer path](docs/buyer-path-1107.md) links phone screenshots and exact observed seams. Final measurement/CI status is recorded in the audit when available.
+Read [LAUNCH-AUDIT.md](LAUNCH-AUDIT.md) for before/after numbers, raw outputs, every literal-target failure and test limits; [LEGAL.md](LEGAL.md) for sourced legal gaps; [DNS-FOR-OWNER.md](DNS-FOR-OWNER.md) for the provider comparison and DNS blocker; [PREMORTEM.md](PREMORTEM.md) for ten ranked failure cases. [Buyer path](docs/buyer-path-1107.md) links phone screenshots and exact observed seams. Final measurement/CI status is recorded in the audit.
 
 ## Every owner decision / external acceptance gate
 
 1. **Final film and offer:** decide creative/product and approved claims; provide the actual description/watch URL, QR and spoken destination. Recheck identity and promise continuity. Publication remains the owner's action.
 2. **Live route cutover:** current public main returns 404 for most launch routes. Merge/release through the existing owner workflow only after acceptance. PR-to-launch does not update public main.
-3. **Commerce and fulfillment:** publish final Gumroad products only after proving year, cover name, shipping address, tax/currency/discounts, charged amount, file delivery, print supplier/adapter, duplicate handling and realistic timing. Decide final refund/cancellation/defect policy and seller/support identity. Draft products are public 404s today.
+3. **Commerce and fulfillment:** publish final Gumroad products only after proving year, cover name, shipping address, tax/currency/discounts, charged amount, file delivery, print supplier/adapter, duplicate handling and realistic timing. Check the no-JavaScript route too: its static checkout URL cannot apply a newly selected year, so the real Gumroad checkout must require the buyer to confirm/select it. Decide final refund/cancellation/defect policy and seller/support identity. Draft products are public 404s today.
 4. **Actual receipt / follow-up:** authenticated Gumroad Receipt tab, checkout up to payment and delivery email could not be inspected. Decide custom receipt/download wording, support sender, transactional vs marketing follow-up, timing, unsubscribe/suppression and print updates. A local thank-you preview is not a completed buyer path.
 5. **Analytics:** configure the existing Make It Do public key and region, server Gumroad secret, free usage limit, retention/IP settings and ingestion checks. Verify real browser-to-confirmed-sale attribution after configuring. This PR's endpoint tests are intercepted fixtures. Consent reduces coverage; reconcile with Gumroad, never describe it as every visitor.
 6. **Privacy/legal:** choose controller/legal identity/address, lawful bases, jurisdictions, processor/DPA/transfer arrangements, retention periods, complaint/right-request process, CCPA/CPRA applicability and consent evidence/withdrawal procedure. Review final FTC disclosures and consumer rights with qualified advice.
@@ -38,3 +38,24 @@ Read [LAUNCH-AUDIT.md](LAUNCH-AUDIT.md) for before/after numbers, raw outputs, e
 ## Procedure gap
 
 The repo had individual tools but no single launch-standard playbook or evidence matrix for this scope. This pass compiled the repeatable checks, disabled integrations and owner gates into the scripts/workflows/docs above. There is no local `missions/_evolution_queue.yaml`; Alexandria and other projects were not mutated.
+
+## Delivered review and measured results
+
+[PR #2 to launch](https://github.com/thekirily/makeitdoshow-site/pull/2). The branch was pushed; it was not merged or deployed.
+
+The earlier local frozen build, before the final performance correction, has 40 Lighthouse measurements: performance 96–100, accessibility 100, best practices 100. Maximum LCP is 1.877s and maximum CLS is 0.0105. Three mobile TBT checks fail the strict 150ms target: home 244ms, booklet 159ms, article 153ms. Ten noindex template/device measurements intentionally retain SEO 66; other SEO scores are 100. These failures remain in the audit and cannot be reported as a universal pass.
+
+There are 40 passing axe/keyboard/200% reflow template/device views, 309 functional checks, 119 funnel/experiment checks, six signup fixture checks, and nine importer unit tests. Internal linkinator scans pass both profiles over all 65 routes; external scans retain one authenticated Google account-management URL returning 401. Nu finds zero syntax errors; its file-origin CSP warnings remain visible. Schema.org passed 20 phone submissions; desktop attempts hit a service error and then HTTP 429 rate limiting. Google Rich Results remained blocked.
+
+Gitleaks classified four occurrences of the exact public experiment name as false positives. The exact-value allowlist keeps all default rules; a generated credential-shaped regression still triggers detection. No real secret was found. CI's initial installer failures and their fixes are retained in Actions; final successful CI status is recorded below.
+
+Integration discovery found an unconnected PostHog plugin, surfaced as an optional connection route; it was not installed or used. Searches returned no Gumroad or Brevo match, though the directory is not exhaustive. No account access is inferred from these suggestions.
+
+
+## Final CI acceptance
+
+[Successful CI run](https://github.com/thekirily/makeitdoshow-site/actions/runs/42387652288), tested source commit d342bef. All 40 mobile/desktop views score **100 performance, accessibility and best practices**. All indexable views score **100 SEO**; the ten deliberate noindex views retain SEO 66 and are the explicit exception, not hidden passes. Maximum mobile LCP is **1.807s**, CLS **0.0004**, TBT **0ms**; desktop maximum LCP **0.483s**, CLS **0.0005**, TBT **0ms**.
+
+The independent run also passes the 40 axe/keyboard/200% views (including selected-year clipping), 309 functional checks, 119 funnel/experiment checks, six signup checks, nine unit tests, HTML validation, all-history secret scan, internal links and page-weight budget. Raw final reports are in evidence/launch-1107/after-lighthouse; provenance/digests are in ci-final.json. The final evidence-only commit preserves the runtime fingerprint of this tested source.
+
+Additional fixes from measured failures: inactive experiment boot is deferred; the phone downloads a 500px, 18KB cover instead of the 42KB original; the original artwork remains available for larger screens. Budgeting includes both responsive candidates. A missing Courier Prime PDF-font notice was added from its official source. The local failed runs and the pre-fix independent 2.028s booklet LCP remain available, separately labelled.

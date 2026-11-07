@@ -4,11 +4,11 @@
 
 ## Scope and reproducibility
 
-Baseline is an isolated git archive of launch at b878192. Final Lighthouse uses a frozen HTML/assets/robots snapshot with a source hash in its summary. There are 19 existing templates × phone/desktop and one new accessibility template × both devices. Full-year variants include 1953, pre-minimum-wage 1930, and partial-year 1975. Film q/d paths share the door template. All 46 years, aliases and orphan pages are separately checked by static/link/budget tools. There are now **65 HTML routes and 58 sitemap entries**.
+Baseline is an isolated git archive of launch at b878192. Final Lighthouse uses the exact tested GitHub Actions checkout at d342bef, with source hash 940960eeae8fa3d4efef3c34dfdd6b39f569f538d0f439b991c5eaeef9d6c85c. The downloaded artifact digest and current on-disk source hash both match. Final after-column measurements are from the separate GitHub runner, not selected local scores. There are 19 existing templates × phone/desktop and one new accessibility template × both devices. Full-year variants include 1953, pre-minimum-wage 1930, and partial-year 1975. Film q/d paths share the door template. All 46 years, aliases and orphan pages are separately checked by static/link/budget tools. There are now **65 HTML routes and 58 sitemap entries**.
 
-Lighthouse 13.6.0, Chrome, one serial run per template/device, default simulated throttling, local HTTP. These are shared-host lab numbers, **not field or production-CDN measurements**. Load, timestamp and environment are retained. PostHog, capture and experiments are disabled in speed measurements. Final enabled configurations and assets need their own acceptance check.
+Lighthouse 13.6.0, Chrome, one serial run per template/device, default simulated throttling, local HTTP. Baseline uses the shared local host; the final after run uses a separate Ubuntu GitHub runner. These are lab numbers, **not field or production-CDN measurements**, and the two environments are not a controlled causal comparison. Load, timestamp and environment are retained. PostHog, capture and experiments are disabled in speed measurements. Final enabled configurations and assets need their own acceptance check.
 
-Raw JSON is retained losslessly as .json.gz; use gzip -dc to inspect it. Summary JSON retains failed-audit details. Diagnostic runs remain separate: an initial CSP/robots interaction was fixed with same-origin connections; another run predates the final UTM correction. The final matrix does not select the best score. An incomplete after matrix remains UNMEASURED until all 40 rows exist.
+Raw JSON is retained losslessly as .json.gz; use gzip -dc to inspect it. Summary JSON retains failed-audit details. Diagnostic runs remain separate: an initial CSP/robots interaction was fixed with same-origin connections; another run predates the final UTM correction. The final matrix does not select the best score. All 40 final after measurements are present. The two new-accessibility baseline cells are unmeasured because that page did not exist.
 
 ## Lighthouse before → after
 
@@ -16,60 +16,60 @@ Targets: P/A/BP/SEO each ≥95; LCP <2.000s, CLS <0.0500, TBT <150ms. Score orde
 
 | Template | Device | Before scores | Before LCP / CLS / TBT | Before | After scores | After LCP / CLS / TBT | After |
 |---|---|---|---|---|---|---|---|
-| home | mobile | 93 / 100 / 100 / 100 | 0.907 / 0.0000 / 320.0 | FAIL performance, tbt_ms | 96 / 100 / 100 / 100 | 0.902 / 0.0000 / 244.0 | FAIL tbt_ms |
+| home | mobile | 93 / 100 / 100 / 100 | 0.907 / 0.0000 / 320.0 | FAIL performance, tbt_ms | 100 / 100 / 100 / 100 | 0.907 / 0.0000 / 0.0 | PASS |
 | home | desktop | 100 / 100 / 100 / 100 | 0.365 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.383 / 0.0001 / 0.0 | PASS |
-| directory | mobile | 99 / 100 / 100 / 100 | 0.902 / 0.0000 / 99.5 | PASS | 100 / 100 / 100 / 100 | 0.903 / 0.0000 / 56.2 | PASS |
-| directory | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.285 / 0.0001 / 0.0 | PASS |
-| year-full | mobile | 100 / 100 / 100 / 100 | 1.024 / 0.0104 / 29.5 | PASS | 100 / 100 / 100 / 100 | 1.053 / 0.0104 / 0.0 | PASS |
-| year-full | desktop | 100 / 100 / 100 / 100 | 0.405 / 0.0002 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.442 / 0.0002 / 0.0 | PASS |
-| year-pre-wage | mobile | 100 / 100 / 100 / 100 | 0.955 / 0.0000 / 35.0 | PASS | 100 / 100 / 100 / 100 | 1.054 / 0.0105 / 1.0 | PASS |
-| year-pre-wage | desktop | 100 / 100 / 100 / 100 | 0.408 / 0.0002 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.405 / 0.0002 / 0.0 | PASS |
-| year-partial | mobile | 100 / 100 / 100 / 100 | 0.903 / 0.0095 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.903 / 0.0095 / 5.2 | PASS |
-| year-partial | desktop | 100 / 100 / 100 / 100 | 0.365 / 0.0102 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.364 / 0.0102 / 3.7 | PASS |
-| booklet | mobile | 98 / 100 / 100 / 100 | 1.803 / 0.0000 / 150.0 | FAIL tbt_ms | 98 / 100 / 100 / 100 | 1.877 / 0.0000 / 159.0 | FAIL tbt_ms |
-| booklet | desktop | 100 / 100 / 100 / 100 | 0.408 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.424 / 0.0001 / 7.0 | PASS |
-| gifts | mobile | 99 / 100 / 100 / 100 | 0.903 / 0.0000 / 109.5 | PASS | 100 / 100 / 100 / 100 | 0.905 / 0.0000 / 58.0 | PASS |
-| gifts | desktop | 100 / 100 / 100 / 100 | 0.246 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.243 / 0.0001 / 0.0 | PASS |
-| article | mobile | 98 / 100 / 100 / 100 | 0.902 / 0.0004 / 179.0 | FAIL tbt_ms | 98 / 100 / 100 / 100 | 0.903 / 0.0004 / 153.0 | FAIL tbt_ms |
-| article | desktop | 100 / 100 / 100 / 100 | 0.366 / 0.0005 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.403 / 0.0005 / 0.0 | PASS |
-| recipes | mobile | 100 / 100 / 100 / 100 | 1.243 / 0.0000 / 65.5 | PASS | 99 / 100 / 100 / 100 | 1.553 / 0.0068 / 0.5 | PASS |
-| recipes | desktop | 100 / 100 / 100 / 100 | 0.444 / 0.0004 / 0.0 | PASS | — | — | UNMEASURED |
-| sources | mobile | 100 / 100 / 100 / 100 | 0.903 / 0.0000 / 86.0 | PASS | — | — | UNMEASURED |
-| sources | desktop | 100 / 100 / 100 / 100 | 0.243 / 0.0001 / 0.0 | PASS | — | — | UNMEASURED |
-| about | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0003 / 0.0 | PASS | — | — | UNMEASURED |
-| about | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0005 / 0.0 | PASS | — | — | UNMEASURED |
-| privacy | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | — | — | UNMEASURED |
-| privacy | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0001 / 0.0 | PASS | — | — | UNMEASURED |
-| terms | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | — | — | UNMEASURED |
-| terms | desktop | 100 / 100 / 100 / 100 | 0.243 / 0.0006 / 0.0 | PASS | — | — | UNMEASURED |
-| family | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | — | — | UNMEASURED |
-| family | desktop | 100 / 100 / 100 / 100 | 0.244 / 0.0001 / 0.0 | PASS | — | — | UNMEASURED |
-| thanks | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0002 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| thanks | desktop | 100 / 100 / 100 / 66 | 0.300 / 0.0001 / 5.0 | FAIL seo | — | — | UNMEASURED |
-| missing | mobile | 99 / 100 / 100 / 66 | 0.903 / 0.0002 / 119.0 | FAIL seo | — | — | UNMEASURED |
-| missing | desktop | 100 / 100 / 100 / 66 | 0.242 / 0.0001 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| door | mobile | 100 / 100 / 100 / 66 | 0.903 / 0.0001 / 66.1 | FAIL seo | — | — | UNMEASURED |
-| door | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0003 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| privacy-alias | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0003 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| privacy-alias | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0001 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| terms-alias | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0003 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| terms-alias | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0001 / 0.0 | FAIL seo | — | — | UNMEASURED |
-| accessibility | mobile | — | — | UNMEASURED | — | — | UNMEASURED |
-| accessibility | desktop | — | — | UNMEASURED | — | — | UNMEASURED |
+| directory | mobile | 99 / 100 / 100 / 100 | 0.902 / 0.0000 / 99.5 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| directory | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.250 / 0.0001 / 0.0 | PASS |
+| year-full | mobile | 100 / 100 / 100 / 100 | 1.024 / 0.0104 / 29.5 | PASS | 100 / 100 / 100 / 100 | 0.903 / 0.0000 / 0.0 | PASS |
+| year-full | desktop | 100 / 100 / 100 / 100 | 0.405 / 0.0002 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.442 / 0.0000 / 0.0 | PASS |
+| year-pre-wage | mobile | 100 / 100 / 100 / 100 | 0.955 / 0.0000 / 35.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| year-pre-wage | desktop | 100 / 100 / 100 / 100 | 0.408 / 0.0002 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.423 / 0.0000 / 0.0 | PASS |
+| year-partial | mobile | 100 / 100 / 100 / 100 | 0.903 / 0.0095 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| year-partial | desktop | 100 / 100 / 100 / 100 | 0.365 / 0.0102 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.363 / 0.0000 / 0.0 | PASS |
+| booklet | mobile | 98 / 100 / 100 / 100 | 1.803 / 0.0000 / 150.0 | FAIL tbt_ms | 100 / 100 / 100 / 100 | 1.807 / 0.0000 / 0.0 | PASS |
+| booklet | desktop | 100 / 100 / 100 / 100 | 0.408 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.384 / 0.0001 / 0.0 | PASS |
+| gifts | mobile | 99 / 100 / 100 / 100 | 0.903 / 0.0000 / 109.5 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| gifts | desktop | 100 / 100 / 100 / 100 | 0.246 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.243 / 0.0000 / 0.0 | PASS |
+| article | mobile | 98 / 100 / 100 / 100 | 0.902 / 0.0004 / 179.0 | FAIL tbt_ms | 100 / 100 / 100 / 100 | 0.903 / 0.0004 / 0.0 | PASS |
+| article | desktop | 100 / 100 / 100 / 100 | 0.366 / 0.0005 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.402 / 0.0005 / 0.0 | PASS |
+| recipes | mobile | 100 / 100 / 100 / 100 | 1.243 / 0.0000 / 65.5 | PASS | 100 / 100 / 100 / 100 | 1.206 / 0.0000 / 0.0 | PASS |
+| recipes | desktop | 100 / 100 / 100 / 100 | 0.444 / 0.0004 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.483 / 0.0004 / 0.0 | PASS |
+| sources | mobile | 100 / 100 / 100 / 100 | 0.903 / 0.0000 / 86.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| sources | desktop | 100 / 100 / 100 / 100 | 0.243 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.243 / 0.0000 / 0.0 | PASS |
+| about | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0003 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| about | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0005 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.241 / 0.0005 / 0.0 | PASS |
+| privacy | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| privacy | desktop | 100 / 100 / 100 / 100 | 0.242 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.242 / 0.0001 / 0.0 | PASS |
+| terms | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| terms | desktop | 100 / 100 / 100 / 100 | 0.243 / 0.0006 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.242 / 0.0000 / 0.0 | PASS |
+| family | mobile | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| family | desktop | 100 / 100 / 100 / 100 | 0.244 / 0.0001 / 0.0 | PASS | 100 / 100 / 100 / 100 | 0.242 / 0.0000 / 0.0 | PASS |
+| thanks | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0002 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.902 / 0.0000 / 0.0 | FAIL seo |
+| thanks | desktop | 100 / 100 / 100 / 66 | 0.300 / 0.0001 / 5.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.242 / 0.0000 / 0.0 | FAIL seo |
+| missing | mobile | 99 / 100 / 100 / 66 | 0.903 / 0.0002 / 119.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.903 / 0.0002 / 0.0 | FAIL seo |
+| missing | desktop | 100 / 100 / 100 / 66 | 0.242 / 0.0001 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.252 / 0.0000 / 0.0 | FAIL seo |
+| door | mobile | 100 / 100 / 100 / 66 | 0.903 / 0.0001 / 66.1 | FAIL seo | 100 / 100 / 100 / 66 | 0.903 / 0.0000 / 0.0 | FAIL seo |
+| door | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0003 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.242 / 0.0003 / 0.0 | FAIL seo |
+| privacy-alias | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0003 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.902 / 0.0000 / 0.0 | FAIL seo |
+| privacy-alias | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0001 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.242 / 0.0000 / 0.0 | FAIL seo |
+| terms-alias | mobile | 100 / 100 / 100 / 66 | 0.902 / 0.0003 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.901 / 0.0000 / 0.0 | FAIL seo |
+| terms-alias | desktop | 100 / 100 / 100 / 66 | 0.243 / 0.0001 / 0.0 | FAIL seo | 100 / 100 / 100 / 66 | 0.242 / 0.0000 / 0.0 | FAIL seo |
+| accessibility | mobile | — | — | UNMEASURED | 100 / 100 / 100 / 100 | 0.902 / 0.0000 / 0.0 | PASS |
+| accessibility | desktop | — | — | UNMEASURED | 100 / 100 / 100 / 100 | 0.241 / 0.0002 / 0.0 | PASS |
 
 [Baseline outputs](evidence/launch-1107/before-lighthouse/) · [Final outputs](evidence/launch-1107/after-lighthouse/). Accessibility has no baseline.
 
 | Criterion | Before output | After output | After verdict |
 |---|---|---|---|
-| performance | min 93; 1/38 fail | min 96; 0/17 fail | UNMEASURED |
-| accessibility | min 100; 0/38 fail | min 100; 0/17 fail | UNMEASURED |
-| best-practices | min 100; 0/38 fail | min 100; 0/17 fail | UNMEASURED |
-| seo | min 66; 10/38 fail | min 100; 0/17 fail | UNMEASURED |
-| lcp_ms | max 1802.7506; 0/38 fail | max 1877.3759; 0/17 fail | UNMEASURED |
-| cls | max 0.0104; 0/38 fail | max 0.0105; 0/17 fail | UNMEASURED |
-| tbt_ms | max 320; 3/38 fail | max 244; 3/17 fail | UNMEASURED |
+| performance | min 93; 1/38 fail | min 100; 0/40 fail | PASS |
+| accessibility | min 100; 0/38 fail | min 100; 0/40 fail | PASS |
+| best-practices | min 100; 0/38 fail | min 100; 0/40 fail | PASS |
+| seo | min 66; 10/38 fail | min 66; 10/40 fail | FAIL |
+| lcp_ms | max 1802.7506; 0/38 fail | max 1806.6123; 0/40 fail | PASS |
+| cls | max 0.0104; 0/38 fail | max 0.0005; 0/40 fail | PASS |
+| tbt_ms | max 320; 3/38 fail | max 0; 0/40 fail | PASS |
 
-Intentional noindex doors, aliases, thanks and 404 retain low SEO scores: **literal-target FAIL**. Their SEO-only CI exception is explicit; no other metric is relaxed. Shared-host blocking-time failures remain FAIL. A separate runner, when available, is reported separately.
+Intentional noindex doors, aliases, thanks and 404 retain low SEO scores: **literal-target FAIL**. Their SEO-only CI exception is explicit; no other metric is relaxed. The earlier local frozen matrix is retained under local-before-final-performance/: home/booklet/article mobile TBT were 244/159/153ms. They remain failures of that measurement. The independent pre-fix booklet run at ci-before-padding/ measured LCP 2.028s. Final CI has no TBT/LCP/CLS/performance failures; its ten deliberate noindex SEO misses remain literal-target FAILs.
 
 ## All other requested checks
 
@@ -83,7 +83,7 @@ Intentional noindex doors, aliases, thanks and 404 retain low SEO scores: **lite
 | Internal links/assets/fragments | Original static verifier previously reported 1,964 references; baseline linkinator raw output retained | 2,178 static references, 65 HTML pages, all 46 year PDFs; linkinator all routes, both UAs, CSS and fragments | **PASS staged internal**, canonical same-site URLs explicitly mapped to preview; public failures separately retained |
 | External links | One USPS historical-rate PDF URL 404 | Fixed to official HTML source; full all-route linkinator output retained | **NOT an anonymous all-links PASS**: Google account permissions is authenticated (401). Public same-site canonical/social destinations remain 404 until publication |
 | Nu valid HTML | One figure-content-order error and one headingless-wrapper warning | 65 files, zero syntax errors; file-origin CSP warnings retained | **PASS syntax**; file:// warnings do not establish a runtime policy failure. HTTP-origin Nu attempt refused local host and was not counted as validation |
-| Schema.org | Local JSON parsing; no fresh baseline live test claimed | Live code submissions for all 20 templates: zero errors, zero warnings; localized raw output and screenshot | **PASS schema**, not rich-result eligibility |
+| Schema.org | Local JSON parsing; no fresh baseline live test claimed | Live phone code submissions for all 20 templates: zero errors, zero warnings; localized raw output and screenshot. Desktop attempts returned a service error and then HTTP 429; both remain unverified | **PASS phone schema; desktop service check UNVERIFIED**, not rich-result eligibility |
 | Google Rich Results | Previously untested | Real Chrome code submission rejected: Something went wrong / Log in and try again; screenshot retained | **UNVERIFIED**, not substituted by JSON parsing or Lighthouse |
 | Axe serious/critical | Zero in 38 existing views | Zero in all 40 final views | **PASS automated scope**, not all WCAG criteria |
 | Keyboard | Baseline traversal retained | 40 final tab/Enter/skip/focus scans; year selection and consent via keyboard | **PASS checked flows**, no screen-reader/user study |
@@ -96,7 +96,7 @@ Intentional noindex doors, aliases, thanks and 404 retain low SEO scores: **lite
 | Uptime / certificate / alert | No 15-minute monitor | Scheduled :07/:22/:37/:52 HTTPS/TLS check; warning at 21 days; deduplicated failure issue and recovery closure; failing-path probe returns false | **CONFIGURED, NOT ACTIVE here**; default main and notification settings are owner gates; Actions scheduling is best effort |
 | Page weight | No enforced every-route budget | 65 routes; limits raw 550KB, gzip estimate 400KB, JS 30KB, 24 requests; includes lazy images/fonts | **PASS**, actual maxima below |
 | Email capture / deliverability | No selected independent DOI vendor or authenticated sender proof | Three free services compared; Brevo form six fixture checks; off by default; DNS observed read-only | **PARTIAL / BLOCKED** by account-generated DNS, sender, DOI and seed inbox checks |
-| Legal / rights / statement | Policies existed with consent/controller/retention/refund/rights gaps | LEGAL.md checks actual behavior with primary sources; 104-file hash/license inventory; accessibility statement linked | **CHECKLIST COMPLETE, LEGAL CLEARANCE OPEN** |
+| Legal / rights / statement | Policies existed with consent/controller/retention/refund/rights gaps | LEGAL.md checks actual behavior with primary sources; 105-file hash/license inventory; accessibility statement linked | **CHECKLIST COMPLETE, LEGAL CLEARANCE OPEN** |
 | Buyer / delivery / follow-up | Draft commerce closed | Phone Chrome: live door 404, local path works, Gumroad product 404, owner preview redirects to login; separate thanks preview | **FAIL / UNVERIFIED beyond observed seams**, screenshots retained |
 
 GitHub Pages cannot expose arbitrary custom headers here. HSTS, anti-framing, nosniff, Permissions-Policy and response CSP require host/edge support. Meta CSP cannot implement frame-ancestors. A supported referrer-policy meta is included. Owner must accept the limits or arrange an approved host/edge change; no DNS/host mutation occurred. References: [MDN CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP), [frame-ancestors](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors).
@@ -107,10 +107,10 @@ GitHub Pages cannot expose arbitrary custom headers here. HSTS, anti-framing, no
 - after-browser.json: 40 views; 0 serious/critical axe issues; 0 zoom overflows; 0 CSP violations.
 - after-links-all.json mobile: 65 routes, 362 references, 1 failures: https://myaccount.google.com/permissions HTTP 401.
 - after-links-all.json desktop: 65 routes, 362 references, 1 failures: https://myaccount.google.com/permissions HTTP 401.
-- ci-internal-links-all.json mobile: 65 routes, 1521 references, 0 failures.
-- ci-internal-links-all.json desktop: 65 routes, 1521 references, 0 failures.
+- ci-internal-links-all.json mobile: 65 routes, 1522 references, 0 failures.
+- ci-internal-links-all.json desktop: 65 routes, 1522 references, 0 failures.
 - before-weight.json: 64 routes; maxima total_raw_bytes=249252, total_gzip_bytes=224321, javascript_raw_bytes=7540, requests=11.
-- after-weight.json: 65 routes; maxima total_raw_bytes=259913, total_gzip_bytes=227893, javascript_raw_bytes=15056, requests=12.
+- after-weight.json: 65 routes; maxima total_raw_bytes=278357, total_gzip_bytes=246162, javascript_raw_bytes=15041, requests=13.
 - ab-smoke.json: 119 passing checks.
 - signup-smoke.json: 6 passing checks.
 - functional.json: 309 passing checks.
@@ -125,6 +125,12 @@ README.md lists pinned setup and commands. Run browser_qa.py, page_budget.py, va
 
 [Experiment operation](docs/experiments.md), [email/DNS](DNS-FOR-OWNER.md), [buyer seams](docs/buyer-path-1107.md), [legal checklist](LEGAL.md), [premortem](PREMORTEM.md), [handback](handback-1107.md). Actual ingestion, authenticated checkout/receipt, fulfillment, inbox placement, Google acceptance and final film links are still owner gates.
 
+## Secret-scan classification
+
+The scanner initially flagged four occurrences of the exact public experiment slug. The retained .gitleaks.toml extends the default rules and allows only that exact value in generic-api-key. A regression check confirms an independently generated credential-shaped value is detected. No paths, files or commits are excluded.
+
 ## PR / independent CI
 
-PR and final CI status are recorded in handback-1107.md. Local failures remain visible even if a separate runner passes. No merge or deployment occurred.
+[PR #2 to launch](https://github.com/thekirily/makeitdoshow-site/pull/2). [Final successful CI run](https://github.com/thekirily/makeitdoshow-site/actions/runs/42387652288), code d342bef: all 40 views score 100 performance/accessibility/best practices; SEO is 100 except the ten noindex views at 66. Maximum mobile LCP 1.807s, CLS 0.0004, TBT 0ms. Maximum desktop LCP 0.483s, CLS 0.0005, TBT 0ms. CI keeps the explicit noindex-only SEO exception. The final commit adds documentation/evidence only; runtime fingerprint matches the tested source. No merge or deployment occurred.
+
+The cover optimization serves an 18,254-byte 500px derivative instead of the 42,358-byte original on the tested phone; the original remains available at larger sizes. Inactive experiment boot is deferred; enabled experiments retain their synchronous hold. Final 200% checks include selected-year text clipping, not just page overflow. The license inventory includes 105 assets plus a separate 48-PDF font-name extraction and the retained Courier Prime OFL notice.

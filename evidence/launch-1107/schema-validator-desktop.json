@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nTimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#validate-button')\n    - locator resolved to <button id=\"validate-button\" data-upgraded=\",MaterialButton\" class=\"mdl-button mdl-js-button mdl-button--fab mdl-color--schemaorg-red LgbsSe-bnBfGc\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div aria-hidden=\"true\" class=\"XKSfm-Sx9Kwc-xJ5Hnf\"></div> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <div aria-hidden=\"true\" class=\"XKSfm-Sx9Kwc-xJ5Hnf\"></div> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <div aria-hidden=\"true\" class=\"XKSfm-Sx9Kwc-xJ5Hnf\"></div> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n"
+    }
+  ],
+  "isError": true
+}

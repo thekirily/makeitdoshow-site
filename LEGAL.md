@@ -40,11 +40,11 @@ Source: [FTC endorsement guides Q&A](https://www.ftc.gov/business-guidance/resou
 
 ## Asset rights, including every delivered file
 
-The row-by-row inventory is [asset-licenses.csv](evidence/launch-1107/asset-licenses.csv): **104 files**, SHA-256, asserted source, license basis and remaining gap. It covers all 52 WebP files, three WOFF2 files, the SVG favicon and 48 PDF downloads. There is no embedded video/audio or third-party script in these pages. Dormant small-image variants are included as well as used images.
+The row-by-row inventory is [asset-licenses.csv](evidence/launch-1107/asset-licenses.csv): **105 files**, SHA-256, asserted source, license basis and remaining gap. It covers all 53 WebP files, three WOFF2 files, the SVG favicon and 48 PDF downloads. There is no embedded video/audio or third-party script in these pages. Dormant small-image variants are included as well as used images.
 
 | Asset family | Evidence found | Result |
 |---|---|---|
-| `kitchen-1955-*` | Repository credits *A Word to the Wives* (1955); Archive metadata gives a Public Domain Mark URL. Metadata retained as `rights-Wordtoth1955.json`. | Source assertion verified, not independent copyright/publicity clearance. Owner confirm frame provenance and intended commercial use. |
+| `kitchen-1955-*` | Repository credits *A Word to the Wives* (1955); Archive metadata gives a public-domain designation URL. Metadata retained as `rights-Wordtoth1955.json`. | Source assertion verified, not independent copyright/publicity clearance. Owner confirm frame provenance and intended commercial use. |
 | `cars-1957-*`, `market-1957-*` | Repository credits *Shopping Can Be Fun* (1957); same Archive public-domain metadata, retained as `rights-Shopping1957.json`. | Same owner check; do not assume all files on Archive.org are public domain. |
 | `book-1930.webp`–`book-1970.webp`, `sample-*.webp` | Supplied project cover/layout and actual sample-page renders; repository describes archival film/federal records. | OPEN: no per-frame extraction log or authorship/assignment document for supplied design files. Confirm layouts, all component images and any embedded fonts. |
 | Three website fonts | Adjacent `tablebook-OFL.txt` and `sourceserif4-OFL.txt`. Binary metadata retains original copyrights; families renamed TableBook Sans and Porch Serif. Source reserved family name is not used for the derivative. Metadata saved in `font-metadata.json`. | PASS for supplied license presence/renaming; keep notices alongside redistribution. No font is sold on its own. |
@@ -52,6 +52,8 @@ The row-by-row inventory is [asset-licenses.csv](evidence/launch-1107/asset-lice
 | `favicon.svg` | Simple project brand graphic, no external reference. | Owner confirm studio ownership/permission and brand rights. |
 
 Sources: [1955 Archive item](https://archive.org/details/Wordtoth1955), [1957 Archive item](https://archive.org/details/Shopping1957), [USDA book](https://archive.org/details/familyfarefoodma00unit), [17 USC 105](https://www.copyright.gov/title17/92chap1.html#105), [OFL official conditions](https://openfontlicense.org/open-font-license-official-text/). Public-domain marking is evidence, not a warranty or model release; final film music and footage outside this repository require their own clearance.
+
+PDF font extraction is retained in [pdf-font-inventory.json](evidence/launch-1107/pdf-font-inventory.json). It found TableBook Sans regular/bold/italic, Porch Serif and Courier Prime Bold, plus an unnamed font resource requiring owner inspection. The official [Courier Prime OFL](https://github.com/google/fonts/blob/main/ofl/courierprime/OFL.txt) is now retained alongside the other font notices. This improves the license evidence; it does not establish authorship of supplied PDF layouts.
 
 ## Accessibility
 

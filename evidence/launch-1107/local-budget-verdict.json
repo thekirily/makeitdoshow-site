@@ -1,0 +1,27 @@
+{
+  "measurements": 40,
+  "failures": [
+    {
+      "name": "home",
+      "device": "mobile",
+      "failures": [
+        "tbt_ms"
+      ]
+    },
+    {
+      "name": "booklet",
+      "device": "mobile",
+      "failures": [
+        "tbt_ms"
+      ]
+    },
+    {
+      "name": "article",
+      "device": "mobile",
+      "failures": [
+        "tbt_ms"
+      ]
+    }
+  ],
+  "seo_exception": "Only explicitly noindexed doors, aliases, 404 and thanks. Raw SEO scores retained and reported as failing the literal all-page target."
+}
