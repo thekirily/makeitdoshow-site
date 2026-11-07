@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "Enabled configuration renders signup",
+    "Empty email blocked by native validation",
+    "Separate marketing permission required",
+    "One native POST reaches only the configured hosted Brevo endpoint",
+    "Build refuses signup without DOI attestation",
+    "Production form remains off"
+  ],
+  "passed": 6,
+  "scope": "Fixture POST intercepted. Provider double opt-in, email delivery and spam placement require an account and DNS verification."
+}

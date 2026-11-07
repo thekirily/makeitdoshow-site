@@ -1,4 +1,4 @@
-/* Make It Do: explicit, anonymous events. No third-party SDK, replay, or form capture. */
+/* Make It Do: explicit visit events. No third-party SDK, replay, or form capture. */
 (() => {
   'use strict';
   const cfg = JSON.parse(document.getElementById('site-config').textContent);
@@ -10,6 +10,9 @@
   });
   const session = safeStorage('sessionStorage');
   const local = safeStorage('localStorage');
+  let memoryConsent = null;
+  const signalBlocked = () => navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
+  const trackingBlocked = () => signalBlocked() || local.get('mid_analytics_off') === '1' || (memoryConsent || local.get('mid_analytics_consent')) !== 'yes' || !cfg.posthog_project_key;
   const uuid = () => globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(16).slice(2)}`;
   const mediumMap = {q: 'qr', d: 'description', p: 'pinned', e: 'endscreen'};
   const allowedDoors = new Set(['typed', 'qr', 'description', 'pinned', 'endscreen']);
@@ -25,7 +28,7 @@
       : /(^|\.)(chatgpt\.com|chat\.openai\.com|perplexity\.ai|claude\.ai|copilot\.microsoft\.com|gemini\.google\.com)$/.test(referringHost) ? 'ai_referral' : 'referral';
   }
   let previous;
-  try { previous = JSON.parse(session.get('mid_visit') || 'null'); } catch {}
+  try { if (!trackingBlocked()) previous = JSON.parse(session.get('mid_visit') || 'null'); } catch {}
   const explicitDoor = Boolean(doorPath || (campaign && utmDoor));
   let visit = previous;
   const incomingFilm = doorPath ? `film${doorPath[1]}` : campaign && utmDoor ? campaign : 'none';
@@ -37,9 +40,24 @@
     visit = {id: uuid(), film, door, source: explicitDoor ? 'youtube' : source, referrer_host: ownReferrer ? '' : referringHost, attribution: explicitDoor ? 'explicit_film_door' : 'unattributed', is_new: true};
   } else visit.is_new = false;
   visit.last_seen = Date.now();
-  session.set('mid_visit', JSON.stringify(visit));
+  const utm = Object.fromEntries(['utm_source','utm_medium','utm_campaign','utm_content'].filter(k => /^[A-Za-z0-9_.-]{1,80}$/.test(q.get(k) || '')).map(k => [k,q.get(k)]));
+  visit.utm = {...(visit.utm || {}), ...utm};
+  if (!trackingBlocked()) session.set('mid_visit', JSON.stringify(visit));
   const pageYear = location.pathname.match(/^\/(19\d{2})\/?$/)?.[1];
-  const trackingBlocked = () => local.get('mid_analytics_off') === '1' || navigator.globalPrivacyControl === true || navigator.doNotTrack === '1' || window.doNotTrack === '1';
+  function experimentProperties() {
+    const assignment = window.midExperiment?.assignment || visit.experiment;
+    return assignment ? {['$feature/' + assignment.key]: assignment.variant, experiment: assignment.key, variant: assignment.variant} : {};
+  }
+  let exposed = false;
+  function expose() {
+    const assignment = window.midExperiment?.assignment;
+    if (!assignment || exposed || trackingBlocked()) return;
+    exposed = true; visit.experiment = assignment;
+    session.set('mid_visit', JSON.stringify(visit));
+    capture('$feature_flag_called', {$feature_flag: assignment.key, $feature_flag_response: assignment.variant, $feature_flag_request_id: assignment.request_id});
+    capture('experiment_exposed', {experiment: assignment.key, variant: assignment.variant});
+  }
+  window.addEventListener('mid-experiment-ready', expose);
   function capture(event, data = {}) {
     if (trackingBlocked()) return;
     const properties = {
@@ -47,7 +65,7 @@
       $current_url: cfg.origin ? cfg.origin + location.pathname : 'https://makeitdoshow.com' + location.pathname,
       $pathname: location.pathname, film: visit.film, door: visit.door,
       source: visit.source, attribution: visit.attribution,
-      referrer_host: visit.referrer_host, ...(pageYear ? {year: pageYear} : {}), ...data
+      referrer_host: visit.referrer_host, ...visit.utm, ...experimentProperties(), ...(pageYear ? {year: pageYear} : {}), ...data
     };
     // Local QA can inspect payloads without polluting the production project.
     if (!cfg.posthog_project_key || ['localhost', '127.0.0.1', '::1'].includes(location.hostname)) return;
@@ -60,6 +78,7 @@
   }
   if (visit.is_new) capture('visit_started');
   capture('$pageview');
+  expose();
   const parseYear = (value, upper = 1975) => {
     if (!/^\d{2}$|^\d{4}$/.test(value)) return null;
     const year = value.length === 2 ? 1900 + Number(value) : Number(value);
@@ -96,11 +115,22 @@
     const product = link.dataset.checkout;
     link.addEventListener('click', () => {
       const url = new URL(link.href);
-      url.searchParams.set('utm_source', visit.source);
-      url.searchParams.set('utm_campaign', visit.film);
-      url.searchParams.set('utm_medium', visit.door);
+      if (!trackingBlocked()) {
+      for (const [key, value] of Object.entries(visit.utm || {})) url.searchParams.set(key, value);
+      url.searchParams.set('mid_analytics', 'yes');
+      if (visit.experiment) { url.searchParams.set('mid_experiment', visit.experiment.key); url.searchParams.set('mid_variant', visit.experiment.variant); }
+      // Campaign tags and film-door attribution are separate facts. Keep both.
+      url.searchParams.set('mid_film', visit.film);
+      url.searchParams.set('mid_door', visit.door);
+      for (const [key, fallback] of [['utm_source',visit.source],['utm_campaign',visit.film],['utm_medium',visit.door]]) {
+        if (!url.searchParams.has(key)) url.searchParams.set(key, fallback);
+      }
       url.searchParams.set('mid_visit', visit.id);
       url.searchParams.set('mid_attribution', visit.attribution);
+      } else {
+        for (const key of ['mid_visit','mid_film','mid_door','mid_experiment','mid_variant','utm_source','utm_medium','utm_campaign','utm_content','mid_attribution']) url.searchParams.delete(key);
+        url.searchParams.set('mid_analytics', 'no');
+      }
       const year = bookYear?.value || link.dataset.year;
       if (year) {
         url.searchParams.set('mid_year', year);
@@ -112,14 +142,41 @@
   });
   document.querySelectorAll('a[data-download]').forEach(link => link.addEventListener('click', () => capture('sheet_downloaded', {product: link.dataset.download, year: link.dataset.year || ''})));
   document.querySelectorAll('a[data-event]').forEach(link => link.addEventListener('click', () => capture(link.dataset.event)));
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a');
+    if (!link || !link.closest('main') || (!link.matches('.button,.text-link,[data-checkout],[data-download],[data-event]'))) return;
+    const destination = new URL(link.href);
+    capture('cta_clicked', {destination: destination.origin === location.origin ? destination.pathname : destination.hostname, action: link.dataset.checkout || link.dataset.download || link.dataset.event || 'navigate'});
+  });
+  document.querySelectorAll('.email-signup').forEach(form => form.addEventListener('submit', () => {
+    // Submission is an intent; only the provider's double confirmation proves subscription.
+    capture('signup_started', {provider: 'brevo'});
+  }));
+  const choice = document.getElementById('analytics-choice');
   const toggle = document.getElementById('analytics-toggle');
-  if (toggle) {
-    const status = document.getElementById('analytics-status');
-    const refresh = () => {
-      toggle.textContent = local.get('mid_analytics_off') === '1' ? 'Allow visit analytics' : 'Turn off visit analytics';
-      status.textContent = trackingBlocked() ? 'Visit analytics are off in this browser.' : !cfg.posthog_project_key ? 'Analytics are not configured on this version of the site.' : 'Anonymous visit analytics are on.';
-    };
-    toggle.addEventListener('click', () => { local.set('mid_analytics_off', local.get('mid_analytics_off') === '1' ? '0' : '1'); refresh(); });
-    refresh();
+  function refreshConsent() {
+    if (choice) choice.hidden = !cfg.posthog_project_key || signalBlocked() || Boolean(memoryConsent || local.get('mid_analytics_consent')) || local.get('mid_analytics_off') === '1';
+    if (toggle) {
+      toggle.textContent = trackingBlocked() ? 'Allow visit analytics' : 'Turn off visit analytics';
+      document.getElementById('analytics-status').textContent = signalBlocked() ? 'Visit analytics are off because your browser sends DNT or GPC.' : !cfg.posthog_project_key ? 'Analytics are not configured on this version of the site.' : trackingBlocked() ? 'Visit analytics are off in this browser.' : 'Visit analytics are on.';
+    }
   }
+  function choose(value) {
+    const wasBlocked = trackingBlocked();
+    memoryConsent = value;
+    local.set('mid_analytics_consent', value); local.set('mid_analytics_off', value === 'yes' ? '0' : '1');
+    if (value === 'no' || signalBlocked()) {
+      session.remove('mid_visit'); delete visit.experiment;
+      if (window.midExperiment) window.midExperiment.assignment = null;
+    } else if (wasBlocked && !trackingBlocked()) {
+      visit.is_new = true; visit.last_seen = Date.now(); session.set('mid_visit', JSON.stringify(visit));
+      capture('visit_started'); capture('$pageview');
+    }
+    refreshConsent();
+  }
+  document.querySelectorAll('[data-consent]').forEach(button => button.addEventListener('click', () => choose(button.dataset.consent)));
+  if (toggle) toggle.addEventListener('click', () => choose(trackingBlocked() ? 'yes' : 'no'));
+  // Withdrawal signals also clear previously stored attribution on subsequent pages.
+  if (signalBlocked() || local.get('mid_analytics_off') === '1' || local.get('mid_analytics_consent') === 'no') session.remove('mid_visit');
+  refreshConsent();
 })();

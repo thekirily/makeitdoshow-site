@@ -1,0 +1,23 @@
+{
+  "assets/fonts/sourceserif4-display.woff2": {
+    "0": "\u00a9 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name \u2018Source\u2019.",
+    "1": "Porch Serif",
+    "6": "PorchSerifRoman-Regular",
+    "13": null,
+    "14": null
+  },
+  "assets/fonts/tablebook-700.woff2": {
+    "0": "Copyright 2020-2024 The Atkinson Hyperlegible Next Project Authors (https://github.com/googlefonts/atkinson-hyperlegible-next)",
+    "1": "TableBook Sans",
+    "6": "TableBookSans-Bold",
+    "13": null,
+    "14": null
+  },
+  "assets/fonts/tablebook-400.woff2": {
+    "0": "Copyright 2020-2024 The Atkinson Hyperlegible Next Project Authors (https://github.com/googlefonts/atkinson-hyperlegible-next)",
+    "1": "TableBook Sans",
+    "6": "TableBookSans-Regular",
+    "13": null,
+    "14": null
+  }
+}

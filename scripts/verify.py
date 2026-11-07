@@ -23,7 +23,7 @@ class Document(HTMLParser):
   if tag=='script':self._json=False
 
 def main():
- docs={p:Document(p.read_text()) for p in ROOT.rglob('*.html') if 'evidence' not in p.parts and '.git' not in p.parts}
+ docs={p:Document(p.read_text()) for p in ROOT.rglob('*.html') if not any(x in p.parts for x in ('evidence','node_modules','.git')) and '.git' not in p.parts}
  errors=[];links=0
  for p,d in docs.items():
   if d.h1!=1:errors.append(f'{p}: {d.h1} H1s')
