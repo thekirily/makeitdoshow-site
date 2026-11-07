@@ -25,6 +25,7 @@ with sync_playwright() as pw:
    cfg['posthog_project_key']='' if variant=='unconfigured' else 'phc_fixture_never_sent'
    cfg['experiment']={'enabled':u.path=='/','key':'launch-presentation-v1','variants':{'control':{},'variant':{'headline':'Fixture alternative headline','price':'$49','hero':{'src':'kitchen-1955-c.webp','alt':'Fixture kitchen image'}}}}
    body=body[:start]+json.dumps(cfg)+body[end:]
+   if cfg['experiment']['enabled']:body=body.replace('<script defer src="/assets/experiments.js">','<script src="/assets/experiments.js">')
    # Same-origin JS and specific ingest host remain enforced. Production config JSON hashes do not apply to intercepted fixtures.
    body=body.replace("connect-src &#x27;self&#x27;",'connect-src https://us.i.posthog.com')
    if u.path=='/your-year/':body=body.replace('</main>','<a id="fixture-buy" href="https://oldporchpress.gumroad.com/l/mid-your-year?wanted=true" data-checkout="youryear" data-year="1953">Fixture checkout</a></main>')

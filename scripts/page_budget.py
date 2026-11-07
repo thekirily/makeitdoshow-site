@@ -11,6 +11,7 @@ class Assets(HTMLParser):
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if tag in {'img','script'} and a.get('src'):self.urls.add(a['src'])
+  if tag=='img' and a.get('srcset'):self.urls.update(x.strip().split()[0] for x in a['srcset'].split(','))
   if tag=='link' and a.get('rel') in {'stylesheet','preload','icon'}:self.urls.add(a['href'])
 def pages(root=ROOT):
  return sorted(p for p in root.rglob('*.html') if not {'evidence','node_modules','.git'} & set(p.relative_to(root).parts))
