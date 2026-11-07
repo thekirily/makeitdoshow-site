@@ -22,12 +22,12 @@
     function update() {
       var y = y1.value || '1953', name = tidy(n1.value) || 'Margaret';
       img.src = '/assets/img/shop/cover-' + y + '.webp';
-      cap.textContent = 'For ' + name + ', born ' + y;
-      document.getElementById('nameline').textContent = cap.textContent;
+      cap.textContent = name;
+      document.getElementById('nameline').textContent = 'For ' + name + ', born ' + y;
       // same rule as the print robot: 22pt, shrinking to 16pt to stay inside the type-safe area (0.5in from the trim)
-      var w = cap.parentNode.clientWidth, pt = 22;
+      var w = cap.parentNode.clientWidth, pt = 60;
       cap.style.fontSize = (pt / 72 / 8.5 * w) + 'px';
-      while (cap.offsetLeft + cap.offsetWidth > w * (8.0 / 8.5) && pt > 16) { pt -= 1; cap.style.fontSize = (pt / 72 / 8.5 * w) + 'px'; }
+      while (cap.offsetLeft + cap.offsetWidth > w * (8.0 / 8.5) && pt > 34) { pt -= 1; cap.style.fontSize = (pt / 72 / 8.5 * w) + 'px'; }
       fact.textContent = y1.value ? line(y1.value) : '';
       var f = facts[y];
       if (big && f && f.then) big.innerHTML = '<span>' + f.then + ' minutes</span> of work at the minimum wage bought a dozen eggs in ' + y + '. <em>Today, ' + f.now + '.</em>';
@@ -43,6 +43,15 @@
     var err = new URLSearchParams(location.search).get('error');
     if (err) { var p = document.createElement('p'); p.className = 'shop-error'; p.setAttribute('role', 'alert'); p.textContent = err; form.insertBefore(p, form.firstChild); }
     update();
+  }
+  var dl = document.getElementById('delivery');
+  if (dl && form) {
+    fetch((form.getAttribute('action') || '').replace('/api/checkout', '') + '/api/delivery').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+      var f = function (s, opt) { return new Date(s + 'T12:00:00').toLocaleDateString('en-US', opt || { month: 'short', day: 'numeric' }); };
+      var to = d.from.slice(0, 7) === d.to.slice(0, 7) ? new Date(d.to + 'T12:00:00').getDate() : f(d.to);
+      dl.innerHTML = '<b>At her door about ' + f(d.from) + '–' + to + '</b> if you order today: printed after you pay, then U.S. Mail, by our printer’s own estimate.'
+        + (d.christmas_cutoff ? ' For Christmas, order by ' + f(d.christmas_cutoff, { weekday: 'long', month: 'long', day: 'numeric' }) + '.' : '');
+    }).catch(function () {});
   }
   var v = document.querySelector('.shop-video');
   // the poster is set only as the loop nears the screen: browsers fetch a poster eagerly, and it competed with the hero image

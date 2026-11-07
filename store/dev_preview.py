@@ -5,6 +5,8 @@ HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 os.environ.update(SERVE_SITE=sys.argv[1], PAYPAL_API_BASE_URL='http://127.0.0.1:8788', PAYPAL_CLIENT_ID='fake', PAYPAL_CLIENT_SECRET='fake',
                   PAYPAL_WEBHOOK_ID='WH-FAKE', PUBLIC_BASE='http://127.0.0.1:8787', ORDER_DB=os.path.join(HERE, 'var', 'preview.sqlite'),
                   ORDER_LOG=os.path.join(HERE, 'var', 'preview-log.jsonl'))
+env = dict(l.strip().split('=', 1) for l in open(os.path.expanduser('~/.local/share/agent-tools/secrets/lulu.env')) if '=' in l)
+os.environ.update(LULU_ENV='production', **env)   # read-only calls only (delivery estimate); print jobs are refused in code
 from tests.fakes import FakePayPal
 from orders.app import app, Quiet
 from wsgiref.simple_server import make_server, WSGIServer

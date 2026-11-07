@@ -38,7 +38,7 @@ def pic(src, alt, w, h, cls='', lazy=True, sizes='(max-width: 800px) 100vw, 60vw
 
 
 def render(name, alt, lazy=True, cls=''):
-    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, sizes='(max-width: 680px) 320px, (max-width: 900px) 100vw, 60vw', srcset=(f'/assets/img/shop/{name}-560.webp 560w, ' if name == 'yy_hero' else '') + f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
+    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, sizes='(max-width: 680px) 320px, (max-width: 900px) 100vw, 60vw', srcset=(f'/assets/img/shop/{name}-560.webp 560w, ' if name.startswith('cover_') else '') + f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
 
 
 def build(page, a, crumbs, Y, C, CATALOG):
@@ -47,7 +47,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
     api = C.get('orders_api') or ''
     spec = CATALOG['products']['youryear']
     opts = '<option value="">Choose a year</option>' + ''.join(f'<option value="{y}">{y}</option>' for y in range(1970, 1929, -1))
-    honest = ('<p class="shop-note">Pictures: the booklet rendered from its actual print files at true size, and its real pages. '
+    honest = ('<p class="shop-note">Pictures: the covers and pages are made from the actual print files; the Family Years is a render. '
               'No printed copy has been photographed yet.</p>')
 
     def line_fields(n, hidden=False):
@@ -55,14 +55,14 @@ def build(page, a, crumbs, Y, C, CATALOG):
                 f'<label for="{"book-year" if n == 1 else "year2"}">Year she was born</label><select id="{"book-year" if n == 1 else "year2"}" name="year{n}" {"required" if n == 1 else ""} data-line="{n}">{opts}</select>'
                 f'<label for="name{n}">Name for the cover</label><input id="name{n}" name="name{n}" maxlength="24" autocomplete="off" '
                 f'{"required" if n == 1 else ""} data-line="{n}" placeholder="Margaret" aria-describedby="hint{n}">'
-                f'<p class="shop-hint" id="hint{n}">It prints as “For Margaret, born 1953”. Up to 24 letters.</p></fieldset>')
+                f'<p class="shop-hint" id="hint{n}">Set large on the cover, under “For”. Up to 24 letters.</p></fieldset>')
 
     buy = (f'<form class="shop-buy" id="order" method="post" action="{api}/api/checkout" data-facts=\'{esc(json.dumps(facts))}\'>'
            '<input type="hidden" name="product" value="youryear">'
            + line_fields(1) +
            '<div class="shop-preview" aria-live="polite"><div class="shop-cover">'
            + pic('cover-1953.webp', 'The front cover of the booklet, with the year and the name you choose', 600, 776, 'shop-cover-img', lazy=True, sizes='300px') +
-           '<p class="shop-cover-name" id="covername" aria-hidden="true">For Margaret, born 1953</p></div>'
+           '<p class="shop-cover-name" id="covername" aria-hidden="true">Margaret</p></div>'
            '<div><p class="shop-nameline" id="nameline">For Margaret, born 1953</p>'
            '<p class="shop-preview-cap">The cover as it will print, and its name line enlarged. Type a name and choose a year to see hers.</p></div></div>'
            '<p class="shop-fact" id="fact"></p>'
@@ -73,7 +73,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
               if live else '<p class="availability"><span class="status-dot" aria-hidden="true"></span> Orders open soon. No payment is being taken yet.</p>') +
            '<ul class="shop-assure">'
            '<li><b>Pay by card</b> on PayPal’s secure page, usually as a guest, with no account to open. You enter the mailing address there.</li>'
-           '<li><b>About 2½ weeks to her door.</b> Printed after you pay, then U.S. Mail: our printer quotes 11–13 business days in all.</li>'
+           '<li id="delivery"><b>About 2½ weeks to her door.</b> Printed after you pay, then U.S. Mail: our printer quotes 11–13 business days in all.</li>'
            '<li><b>Shipping to any U.S. address is included.</b> Send it straight to her.</li></ul>'
            '</form>')
 
@@ -82,8 +82,8 @@ def build(page, a, crumbs, Y, C, CATALOG):
             '<p class="lede">Her birth year, as the government recorded it. Her name on the cover.</p>'
             '<p class="shop-price"><span>$49</span> U.S. shipping included</p></div>'
             '<div class="shop-gallery">'
-            '<figure class="shop-main">' + render('yy_hero', 'The 1953 booklet on a kitchen table: the cover reads “For Margaret, born 1953”; beside it, the booklet open at “Was it really cheaper?”', lazy=False) +
-            '<figcaption>The 1953 edition, named for Margaret. 8½ × 11 inches, the size of a letter.</figcaption></figure>'
+            '<figure class="shop-main">' + render('cover_hero', 'The front cover of the 1953 booklet as it prints: 1953 in gold, a 1955 kitchen in color, and below it, set large, For Margaret, born 1953', lazy=False) +
+            '<figcaption>The 1953 cover, named for Margaret, exactly as it prints. 8½ × 11 inches, the size of a letter.</figcaption></figure>'
             '<div class="shop-thumbs">'
             '<figure>' + pic('page-1953-05.webp', 'Page 5: Was it really cheaper? Minutes of work at the minimum wage for each grocery, 1953 and today', 680, 880, sizes='200px') + '<figcaption>Page 5</figcaption></figure>'
             '<figure>' + pic('page-1953-07.webp', 'Page 7: the names on the cribs in 1953, Mary first with 64,389', 680, 880, sizes='200px') + '<figcaption>Page 7</figcaption></figure>'
@@ -119,7 +119,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
                '<div><dt>Size</dt><dd>8½ × 11 inches, the size of a letter</dd></div>'
                '<div><dt>Binding</dt><dd>Saddle-stitched: folded and stapled at the spine, like a good program</dd></div>'
                '<div><dt>Paper</dt><dd>80 lb coated white, with a matte cover</dd></div>'
-               '<div><dt>On the cover</dt><dd>Her year, and “For [her name], born [year]”</dd></div>'
+               '<div><dt>On the cover</dt><dd>Her year at the top; her name below, set large like a book title</dd></div>'
                '<div><dt>Printed by</dt><dd>Lulu, the print-on-demand house, after you order</dd></div>'
                '<div><dt>Delivery</dt><dd>U.S. Mail, about 2½ weeks in all; U.S. addresses only</dd></div>'
                '<div><dt>Price</dt><dd>$49, shipping included. Another year in the same envelope, $29</dd></div>'
@@ -138,7 +138,7 @@ def build(page, a, crumbs, Y, C, CATALOG):
              '<p class="lede">Start with a price. The rest is what she remembers.</p>' + a('#order', 'Choose her year', 'button') + '</section>')
 
     schema = [{'@type': 'Product', 'name': 'Your Year, in Color', 'description': spec['spec'] + '. Personalized with one name and birth year, 1930–1970.',
-               'image': C['origin'] + '/assets/img/shop/yy_hero-1600.webp', 'brand': {'@type': 'Brand', 'name': 'Make It Do'},
+               'image': C['origin'] + '/assets/img/shop/cover_hero-1600.webp', 'brand': {'@type': 'Brand', 'name': 'Make It Do'},
                'offers': {'@type': 'Offer', 'price': '49.00', 'priceCurrency': 'USD', 'availability': 'https://schema.org/' + ('InStock' if live else 'PreOrder'),
                           'shippingDetails': {'@type': 'OfferShippingDetails', 'shippingRate': {'@type': 'MonetaryAmount', 'value': '0', 'currency': 'USD'},
                                               'shippingDestination': {'@type': 'DefinedRegion', 'addressCountry': 'US'}}}}]
@@ -155,9 +155,9 @@ def build(page, a, crumbs, Y, C, CATALOG):
              '<section class="page-intro shop-intro"><p class="eyebrow">The Make It Do shop</p><h1>Things to keep,<br><span class="acc">printed one at a time.</span></h1>'
              '<p class="lede">Each one is printed for the person it’s for, from the same government records and real color film as the films.</p></section>'
              '<section class="shop-shelf">'
-             + label(render('yy_hero', 'The Your Year booklet for 1953, closed beside an open copy'), 'Your Year, in Color',
+             + label(render('cover_hero', 'The 1953 cover with Margaret’s name set large'), 'Your Year, in Color',
                      'Printed booklet, saddle-stitched. Her name and birth year on the cover; 1930–1970.', '20 pages · 8½ × 11 in', '$49, U.S. shipping included', '/your-year/')
-             + label(render('other_hero', 'Two booklets, 1953 for Margaret and 1951 for Walter'), 'Another year, same envelope',
+             + label(render('cover_pair', 'Two covers as they print: 1953 for Margaret and 1951 for Walter O’Neill'), 'Another year, same envelope',
                      'A second booklet with its own year and name, added to the same order.', '20 pages · 8½ × 11 in', '+$29', '/your-year/#second')
              + label(render('family_hero', 'The Family Years hardcover, open, with two closed copies'), 'The Family Years',
                      'Hardcover with up to eight family years in one book; three copies, one for each household.', '8½ × 11 in · casewrap',

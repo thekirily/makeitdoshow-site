@@ -50,3 +50,5 @@ select{min-width:0;max-width:100%}
 @media (max-width:680px){.masthead nav a[href="/gifts/"],.masthead nav a[href="/1950s-life/"]{display:none}.shop-preview{grid-template-columns:130px 1fr;gap:14px}.shop-nameline{font-size:18px;padding:10px 12px}}
 html,body{overflow-x:clip}.acc{color:var(--gold)}.button:active,.shop-pay:active{transform:translateY(1px);filter:brightness(.92)}button:disabled,.button[aria-disabled=true]{opacity:.55;cursor:not-allowed}.shop-pay{white-space:nowrap}.shop-label .shop-label-title{font-size:28px;margin:0 0 8px;letter-spacing:-.025em}.shop-label-title a{text-decoration:none;color:var(--ink)}
 .shop-item-pic img{aspect-ratio:3/2;object-fit:contain;background:#efebe0}
+.shop-cover-name{top:72.64%;bottom:auto;font-family:var(--serif);font-weight:550;line-height:1.02;letter-spacing:-.012em;color:#f6eedc}.shop-nameline{font-family:var(--serif);font-weight:550;letter-spacing:-.01em}
+@media (max-width:680px){.shop-pay{position:sticky;bottom:10px;z-index:5;box-shadow:0 8px 22px -8px rgba(24,53,42,.6)}}

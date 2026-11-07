@@ -15,6 +15,7 @@ from . import ledger, personalise, paypal, payhip
 
 ALLOW_ORIGIN = os.environ.get('SITE_ORIGIN', 'http://127.0.0.1:8115')
 FILES = os.path.join(STORE, 'var', 'files')
+_DELIVERY = None
 
 
 def respond(start, status, body=None, headers=(), ctype='application/json'):
@@ -82,6 +83,26 @@ def app(env, start):
     if path == '/api/payhip/webhook' and method == 'POST':
         code, msg = payhip.webhook(json.loads(raw))
         return respond(start, f'{code} {"OK" if code == 200 else "Bad Request"}', {'result': msg})
+
+    if path == '/api/delivery':   # Lulu's own estimate for MAIL to a mid-country address, cached; read-only call
+        import time as _t, datetime as _d
+        global _DELIVERY
+        if not _DELIVERY or _t.time() - _DELIVERY[0] > 6 * 3600:
+            try:
+                from .lulu import Lulu
+                spec = CATALOG['products']['youryear']
+                opts = Lulu().shipping_options(spec['pod_package_id'], spec['interior_pages'], 1,
+                       {'city': 'Columbus', 'country_code': 'US', 'postcode': '43215', 'state_code': 'OH', 'street1': '101 N High St', 'phone_number': '6145550100'})
+                o = next(x for x in opts if x['level'] == spec['shipping_level'])
+                lo, hi = _d.date.fromisoformat(o['min_delivery_date'][:10]), _d.date.fromisoformat(o['max_delivery_date'][:10])
+                today = _d.date.today(); xmas = _d.date(today.year, 12, 24)
+                cutoff = xmas - (hi - today)
+                _DELIVERY = (_t.time(), {'from': lo.isoformat(), 'to': hi.isoformat(), 'christmas_cutoff': cutoff.isoformat() if today <= cutoff <= xmas else None,
+                                         'source': 'Lulu shipping-options, ' + spec['shipping_level'], 'as_of': today.isoformat()})
+            except Exception as e:
+                log_event('delivery.unavailable', error=f'{type(e).__name__}: {e}')
+                return respond(start, '503 Service Unavailable', {'message': 'estimate unavailable'})
+        return respond(start, '200 OK', _DELIVERY[1])
 
     m = re.fullmatch(r'/api/order/(MID-[0-9]{6}-[0-9A-F]{8})', path)
     if m:

@@ -31,18 +31,21 @@ body{{margin:0;color:#1E1B18;font:400 16pt/1.42 SrcSerif;width:17.25in;height:11
 .src{{font:400 14pt/1.35 Plain;color:#6B655B}}
 .half{{width:8.625in;height:11.25in;position:relative;overflow:hidden}}
 .front{{background:#1E1B18;color:#EFE6D2}}
-.front .img{{position:absolute;left:.125in;right:.125in;top:3.3in;height:5.1in;background:url('{FRAME}') center/cover}}
+.front .img{{position:absolute;left:.125in;right:.125in;top:3.2in;height:4.15in;background:url('{FRAME}') center/cover}}
 .front .yr{{position:absolute;left:.6in;top:.55in;font:800 150pt/.8 SrcSerif;font-variation-settings:"opsz" 60;letter-spacing:-.05em;color:#F4C430}}
 .front .t{{position:absolute;left:.65in;top:2.45in;font:700 26pt/1 SrcSerif;letter-spacing:-.01em}}
 .front .t i{{font-weight:400}}
-.front .for{{position:absolute;left:.65in;bottom:1.45in;font:700 22pt/1.2 Plain;white-space:nowrap}}
-.front .sub{{position:absolute;left:.65in;right:.65in;bottom:.7in;font:400 16pt/1.35 Plain;color:#cfc6b4}}
+.front .for{{position:absolute;left:.65in;right:.65in;top:7.72in;margin:0}}
+.front .k2{{font:700 12pt/1 Plain;letter-spacing:.24em;text-transform:uppercase;color:#F4C430}}
+.front .nm{{display:block;width:max-content;font:500 60pt/1.02 SrcSerif;font-variation-settings:"opsz" 60;letter-spacing:-.012em;color:#F6EEDC;white-space:nowrap;margin:.08in 0 .1in}}
+.front .bn{{font:700 12pt/1 Plain;letter-spacing:.24em;text-transform:uppercase;color:#cfc6b4}}
+.front .sub{{position:absolute;left:.65in;right:.65in;bottom:.62in;font:400 16pt/1.35 Plain;color:#cfc6b4}}
 .back{{padding:.9in .8in}}
 .back p{{font-size:16pt;max-width:6.3in}}
 </style></head><body>
 <div class="half back"><div class="k">Make It Do</div><p style="margin-top:14pt">Bread, eggs, milk, gas, a stamp and an hour's pay, as the government's own price agents wrote them down in {y}, beside real color film of the time. With the names in the hospital nursery that year, a recipe from the government's kitchen, and two pages for what it cost in your own house.</p>
 <p class="src" style="position:absolute;bottom:.7in;left:.8in">From the film <i>Everyday Life in 1950s America, in Real Color Film</i>. Frames from <i>A Word to the Wives</i> (c. 1955) and <i>Shopping Can Be Fun</i> (1957), public domain.</p></div>
-<div class="half front"><div class="yr">{y}</div><div class="t">Your Year, <i>in Color</i></div><div class="img"></div><div class="for" id="for">For {nm}, born {y}</div><div class="sub">What things cost the year you were born, from the government's own records</div></div>
+<div class="half front"><div class="yr">{y}</div><div class="t">Your Year, <i>in Color</i></div><div class="img"></div><div class="for"><span class="k2">For</span><span class="nm" id="for">{nm}</span><span class="bn">born {y}</span></div><div class="sub">What things cost the year you were born, from the government's own records</div></div>
 </body></html>"""
 
 
@@ -61,10 +64,10 @@ def build_cover(y, name, out_pdf, page=None):
             t.write(cover_html(y, name)); tmp = t.name
         page.goto('file://' + tmp); page.wait_for_load_state('networkidle')
         page.evaluate('document.fonts.ready')
-        size = 22
+        size = 60
         while True:
-            right = page.evaluate("(() => { const e = document.getElementById('for'); const r = e.getBoundingClientRect(); return r.right - e.parentElement.getBoundingClientRect().left; })()")
-            if right <= SAFE_RIGHT_PX or size <= 16:
+            right = page.evaluate("(() => { const e = document.getElementById('for'); const r = e.getBoundingClientRect(); return r.right - e.closest('.half').getBoundingClientRect().left; })()")
+            if right <= SAFE_RIGHT_PX or size <= 34:
                 break
             size -= 1
             page.evaluate(f"document.getElementById('for').style.fontSize = '{size}pt'")
@@ -119,9 +122,10 @@ def preflight(kind, path, *, year, name=None):
         if rep['page_in'] != [tuple(SPEC['cover_in'])]:
             rep['problems'].append(f"cover size {rep['page_in']} != {SPEC['cover_in']} (17.25x11.25 in incl. 0.125 in bleed)")
         txt = re.sub(r'\s+', ' ', d[0].get_text())
-        want = f'For {name}, born {year}'
-        rep['name_line_found'] = want in txt
-        if want not in txt:
+        want = f'{name} / born {year}'
+        squeezed = txt.replace(' ', '')   # small capitals are letter-spaced: "B O R N 1 9 5 3"
+        rep['name_line_found'] = f'FOR{name.replace(" ", "")}BORN{year}' in squeezed
+        if not rep['name_line_found']:
             rep['problems'].append(f'cover text does not contain "{want}"')
     unemb = [f['name'] for f in rep['fonts'] if f['emb'] != 'yes']
     stray = sorted({f['name'].split('+')[-1] for f in rep['fonts']} - DESIGNED_FONTS)
