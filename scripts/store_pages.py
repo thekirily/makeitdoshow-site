@@ -38,7 +38,7 @@ def pic(src, alt, w, h, cls='', lazy=True, sizes='(max-width: 800px) 100vw, 60vw
 
 
 def render(name, alt, lazy=True, cls=''):
-    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, srcset=(f'/assets/img/shop/{name}-560.webp 560w, ' if name == 'yy_hero' else '') + f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
+    return pic(f'{name}-1600.webp', alt, 1600, 1067, cls, lazy, sizes='(max-width: 680px) 320px, (max-width: 900px) 100vw, 60vw', srcset=(f'/assets/img/shop/{name}-560.webp 560w, ' if name == 'yy_hero' else '') + f'/assets/img/shop/{name}-800.webp 800w, /assets/img/shop/{name}-1600.webp 1600w')
 
 
 def build(page, a, crumbs, Y, C, CATALOG):
