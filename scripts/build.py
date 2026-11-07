@@ -68,7 +68,7 @@ def row(year,key): return next((r for r in Y[str(year)]['rows'] if r['key']==key
 def img(name,alt,cls='',lazy=True):
  w,h=DIMS[name]
  variant=name.rsplit('.',1)[0]+'-500.webp'
- responsive=(f' srcset="/assets/img/{variant} 500w, /assets/img/{name} {w}w" sizes="(max-width:680px)250px,320px"' if variant in DIMS else '')
+ responsive=(f' srcset="/assets/img/{variant} 500w, /assets/img/{name} {w}w" sizes="(max-width:680px) 250px, 320px"' if variant in DIMS else '')
  return f'<img src="/assets/img/{name}"'+responsive+f' alt="{esc(alt)}" width="{w}" height="{h}" class="{cls}" '+('loading="lazy"' if lazy else 'fetchpriority="high"')+' decoding="async">'
 
 def yearform(label='What year were you born?',button='Find my year',default='',ident='year'):
