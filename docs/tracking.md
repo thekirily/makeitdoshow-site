@@ -50,3 +50,19 @@ Primary references read live November 5, 2026:
 - https://posthog.com/tutorials/api-capture-events
 - https://gumroad.com/help/article/270-url-parameters
 - https://gumroad.com/api
+
+## November 7 consent and experiments correction (supersedes opt-out-only behavior above)
+
+Analytics now require explicit permission before storing attribution, evaluating flags,
+or sending events. DNT/GPC override it. With no public project key, no visit ID is stored.
+Only consented checkout URLs carry `mid_visit`, campaign/door and experiment parameters.
+The server importer accepts only `mid_analytics=yes`; historical/unknown and declined
+sales stay in Gumroad. Existing fixture sales were updated to carry permission.
+This changes the denominator: neither raw visitors nor all purchases can be inferred
+from PostHog. Report consented visits and reconcile against Gumroad totals.
+UTM source, medium, campaign and content slug values survive navigation; email-like,
+long or malformed values are rejected. Do not put personal data in campaign tags.
+`cta_clicked` records one intentional main-content action click. `checkout_started`
+is still a click, not proof the off-site page loaded. Optional Brevo forms emit only
+`signup_started`; confirmed Brevo DOI is read in Brevo, not inferred from a return page.
+See [experiments](experiments.md) for flag/exposure/conversion setup. This PR starts no test.

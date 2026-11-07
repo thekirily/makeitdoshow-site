@@ -1,0 +1,102 @@
+[
+  {
+    "name": "makeitdoshow.com",
+    "type": "TXT",
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 16
+      }
+    ],
+    "Authority": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 6,
+        "TTL": 1800,
+        "data": "launch1.spaceship.net. support.spaceship.com. 1793810602 43200 3600 604800 3600"
+      }
+    ],
+    "Comment": "Response from 162.159.26.38."
+  },
+  {
+    "name": "_dmarc.makeitdoshow.com",
+    "type": "TXT",
+    "Status": 3,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "_dmarc.makeitdoshow.com.",
+        "type": 16
+      }
+    ],
+    "Authority": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 6,
+        "TTL": 1800,
+        "data": "launch1.spaceship.net. support.spaceship.com. 1793810602 43200 3600 604800 3600"
+      }
+    ],
+    "Comment": "Response from 162.159.27.32."
+  },
+  {
+    "name": "makeitdoshow.com",
+    "type": "MX",
+    "Status": 0,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 15
+      }
+    ],
+    "Authority": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 6,
+        "TTL": 1800,
+        "data": "launch1.spaceship.net. support.spaceship.com. 1793810602 43200 3600 604800 3600"
+      }
+    ],
+    "Comment": "Response from 162.159.26.38."
+  },
+  {
+    "name": "mail.makeitdoshow.com",
+    "type": "TXT",
+    "Status": 3,
+    "TC": false,
+    "RD": true,
+    "RA": true,
+    "AD": true,
+    "CD": false,
+    "Question": [
+      {
+        "name": "mail.makeitdoshow.com.",
+        "type": 16
+      }
+    ],
+    "Authority": [
+      {
+        "name": "makeitdoshow.com.",
+        "type": 6,
+        "TTL": 1800,
+        "data": "launch1.spaceship.net. support.spaceship.com. 1793810602 43200 3600 604800 3600"
+      }
+    ],
+    "Comment": "Response from 162.159.27.32."
+  }
+]

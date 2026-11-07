@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-07T14:58:21.420597+00:00",
+  "origin": "https://makeitdoshow.com/__launch_probe_missing__",
+  "pass": false,
+  "checks": [
+    {
+      "kind": "http",
+      "path": "/",
+      "pass": false,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "kind": "http",
+      "path": "/privacy.html",
+      "pass": false,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "kind": "certificate",
+      "host": "makeitdoshow.com",
+      "expires": "2027-02-04T00:55:56+00:00",
+      "days_remaining": 88.41,
+      "pass": true
+    }
+  ]
+}

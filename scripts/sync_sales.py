@@ -22,9 +22,11 @@ def events_for_sale(sale):
  product = BY_ID.get(sale.get('product_id'))
  if not product or sale.get('test') or sale.get('is_test') or not sale.get('id') or not sale.get('created_at'): return []
  params=parameters(sale.get('url_params'))
- film=params.get('utm_campaign','none')
+ # Browser analytics permission is separate from purchase consent. Unknown/declined stays in Gumroad only.
+ if params.get('mid_analytics') != 'yes': return []
+ film=params.get('mid_film',params.get('utm_campaign','none'))
  if not re.fullmatch(r'film\d{2}',film): film='none'
- door=params.get('utm_medium','direct')
+ door=params.get('mid_door',params.get('utm_medium','direct'))
  if door not in DOORS: door='direct'
  # Only admitted random visit IDs join browser events; no customer ID or email is used.
  visit=params.get('mid_visit','')
@@ -33,8 +35,13 @@ def events_for_sale(sale):
  currency=str(sale.get('currency','usd')).upper()
  if not re.fullmatch('[A-Z]{3}',currency): return []
  props={'distinct_id':visit,'$process_person_profile':False,'film':film,'door':door,'product':product,'currency':currency,'amount':amount,'attribution': 'checkout_url_params' if film!='none' else 'unattributed'}
+ for key in ['utm_source','utm_medium','utm_campaign','utm_content']:
+  if re.fullmatch(r'[A-Za-z0-9_.-]{1,80}',params.get(key,'')): props[key]=params[key]
  year=params.get('mid_year','')
  if re.fullmatch(r'19\d{2}',year) and 1930<=int(year)<=1975: props['year']=year
+ experiment=params.get('mid_experiment',''); variant=params.get('mid_variant','')
+ if re.fullmatch(r'[a-z0-9-]{1,80}',experiment) and variant in {'control','variant'}:
+  props.update({'experiment':experiment,'variant':variant,'$feature/'+experiment:variant})
  # Never let a zero-price discount on a paid product masquerade as a lead signup.
  event='signup_completed' if product in {'free_sheet','free_cards'} else 'order_paid'
  if event=='order_paid': props.update({'revenue':amount,'$revenue':amount})

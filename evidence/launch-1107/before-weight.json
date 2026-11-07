@@ -1,0 +1,523 @@
+{
+  "limits": {
+    "total_raw_bytes": 550000,
+    "total_gzip_bytes": 400000,
+    "javascript_raw_bytes": 30000,
+    "requests": 24
+  },
+  "scope": "Complete HTML + CSS + JS + fonts + icons + all images, including lazy images. PDFs are separate downloads. Gzip estimate, not CDN transfer measurement.",
+  "results": [
+    {
+      "route": "/01/d/",
+      "total_raw_bytes": 85933,
+      "total_gzip_bytes": 64027,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/01/",
+      "total_raw_bytes": 85923,
+      "total_gzip_bytes": 64025,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/01/q/",
+      "total_raw_bytes": 85933,
+      "total_gzip_bytes": 64028,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/1930/",
+      "total_raw_bytes": 177001,
+      "total_gzip_bytes": 146008,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1931/",
+      "total_raw_bytes": 176177,
+      "total_gzip_bytes": 145181,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1932/",
+      "total_raw_bytes": 177424,
+      "total_gzip_bytes": 146435,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1933/",
+      "total_raw_bytes": 177331,
+      "total_gzip_bytes": 146321,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1934/",
+      "total_raw_bytes": 177297,
+      "total_gzip_bytes": 146314,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1935/",
+      "total_raw_bytes": 176686,
+      "total_gzip_bytes": 145692,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1936/",
+      "total_raw_bytes": 177930,
+      "total_gzip_bytes": 146942,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1937/",
+      "total_raw_bytes": 176904,
+      "total_gzip_bytes": 145913,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1938/",
+      "total_raw_bytes": 179170,
+      "total_gzip_bytes": 147531,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1939/",
+      "total_raw_bytes": 178754,
+      "total_gzip_bytes": 147137,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1940/",
+      "total_raw_bytes": 176893,
+      "total_gzip_bytes": 145059,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1941/",
+      "total_raw_bytes": 175050,
+      "total_gzip_bytes": 143411,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1942/",
+      "total_raw_bytes": 177165,
+      "total_gzip_bytes": 145532,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1943/",
+      "total_raw_bytes": 177754,
+      "total_gzip_bytes": 146115,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1944/",
+      "total_raw_bytes": 176878,
+      "total_gzip_bytes": 145281,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1945/",
+      "total_raw_bytes": 177103,
+      "total_gzip_bytes": 145484,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1946/",
+      "total_raw_bytes": 177603,
+      "total_gzip_bytes": 145998,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1947/",
+      "total_raw_bytes": 175693,
+      "total_gzip_bytes": 144072,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1948/",
+      "total_raw_bytes": 177791,
+      "total_gzip_bytes": 146180,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1949/",
+      "total_raw_bytes": 178285,
+      "total_gzip_bytes": 146156,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1950/",
+      "total_raw_bytes": 179075,
+      "total_gzip_bytes": 146700,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1950s-life/",
+      "total_raw_bytes": 131981,
+      "total_gzip_bytes": 107439,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/1951/",
+      "total_raw_bytes": 177333,
+      "total_gzip_bytes": 145154,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1952/",
+      "total_raw_bytes": 178626,
+      "total_gzip_bytes": 146496,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1953/",
+      "total_raw_bytes": 179095,
+      "total_gzip_bytes": 146906,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1954/",
+      "total_raw_bytes": 177852,
+      "total_gzip_bytes": 145691,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1955/",
+      "total_raw_bytes": 178444,
+      "total_gzip_bytes": 146314,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1956/",
+      "total_raw_bytes": 178928,
+      "total_gzip_bytes": 146755,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1957/",
+      "total_raw_bytes": 177878,
+      "total_gzip_bytes": 145733,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1958/",
+      "total_raw_bytes": 179292,
+      "total_gzip_bytes": 147085,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1959/",
+      "total_raw_bytes": 178885,
+      "total_gzip_bytes": 146731,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1960/",
+      "total_raw_bytes": 179590,
+      "total_gzip_bytes": 147231,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1961/",
+      "total_raw_bytes": 177011,
+      "total_gzip_bytes": 144823,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1962/",
+      "total_raw_bytes": 179120,
+      "total_gzip_bytes": 146988,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1963/",
+      "total_raw_bytes": 179943,
+      "total_gzip_bytes": 147515,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1964/",
+      "total_raw_bytes": 178836,
+      "total_gzip_bytes": 146373,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1965/",
+      "total_raw_bytes": 179419,
+      "total_gzip_bytes": 146999,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1966/",
+      "total_raw_bytes": 179868,
+      "total_gzip_bytes": 147434,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1967/",
+      "total_raw_bytes": 178125,
+      "total_gzip_bytes": 145666,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1968/",
+      "total_raw_bytes": 179381,
+      "total_gzip_bytes": 146957,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1969/",
+      "total_raw_bytes": 179877,
+      "total_gzip_bytes": 147438,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1970/",
+      "total_raw_bytes": 178908,
+      "total_gzip_bytes": 146216,
+      "javascript_raw_bytes": 7540,
+      "requests": 9,
+      "failures": []
+    },
+    {
+      "route": "/1971/",
+      "total_raw_bytes": 131128,
+      "total_gzip_bytes": 104442,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/1972/",
+      "total_raw_bytes": 131137,
+      "total_gzip_bytes": 104446,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/1973/",
+      "total_raw_bytes": 131139,
+      "total_gzip_bytes": 104443,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/1974/",
+      "total_raw_bytes": 131144,
+      "total_gzip_bytes": 104445,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/1975/",
+      "total_raw_bytes": 131109,
+      "total_gzip_bytes": 104432,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/404.html",
+      "total_raw_bytes": 85422,
+      "total_gzip_bytes": 63877,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/about/",
+      "total_raw_bytes": 86208,
+      "total_gzip_bytes": 64031,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/family/",
+      "total_raw_bytes": 85849,
+      "total_gzip_bytes": 63910,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/gifts/",
+      "total_raw_bytes": 184016,
+      "total_gzip_bytes": 159458,
+      "javascript_raw_bytes": 7540,
+      "requests": 10,
+      "failures": []
+    },
+    {
+      "route": "/",
+      "total_raw_bytes": 249252,
+      "total_gzip_bytes": 224321,
+      "javascript_raw_bytes": 7540,
+      "requests": 11,
+      "failures": []
+    },
+    {
+      "route": "/kitchen/",
+      "total_raw_bytes": 204374,
+      "total_gzip_bytes": 123235,
+      "javascript_raw_bytes": 7540,
+      "requests": 8,
+      "failures": []
+    },
+    {
+      "route": "/privacy/",
+      "total_raw_bytes": 85000,
+      "total_gzip_bytes": 63591,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/privacy.html",
+      "total_raw_bytes": 89111,
+      "total_gzip_bytes": 65304,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/sources/",
+      "total_raw_bytes": 89222,
+      "total_gzip_bytes": 65347,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/terms/",
+      "total_raw_bytes": 85114,
+      "total_gzip_bytes": 63599,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/terms.html",
+      "total_raw_bytes": 87446,
+      "total_gzip_bytes": 64581,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/thanks/",
+      "total_raw_bytes": 85763,
+      "total_gzip_bytes": 63950,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/year/",
+      "total_raw_bytes": 87880,
+      "total_gzip_bytes": 64463,
+      "javascript_raw_bytes": 7540,
+      "requests": 7,
+      "failures": []
+    },
+    {
+      "route": "/your-year/",
+      "total_raw_bytes": 230248,
+      "total_gzip_bytes": 202169,
+      "javascript_raw_bytes": 7540,
+      "requests": 11,
+      "failures": []
+    }
+  ]
+}

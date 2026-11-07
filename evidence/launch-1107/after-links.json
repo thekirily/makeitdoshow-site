@@ -1,0 +1,3950 @@
+{
+  "links": [
+    {
+      "url": "http://127.0.0.1:8115/",
+      "status": 200,
+      "state": "OK",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/favicon.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/site.css",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/experiments.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/site.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/year/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Find your year"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1950s-life/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Life in the ’50s"
+    },
+    {
+      "url": "http://127.0.0.1:8115/gifts/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Gifts for parents"
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "The booklet"
+    },
+    {
+      "url": "http://127.0.0.1:8115/privacy.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Privacy details"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-c.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/1953/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "See all the 1953 prices →"
+    },
+    {
+      "url": "https://www.youtube.com/@makeitdo",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Watch on YouTube ↗"
+    },
+    {
+      "url": "https://fraser.stlouisfed.org/files/docs/publications/histstatus/hstat1970_cen_1975_v1.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Historical Statistics of the United States, Part 1, p. 213, series E 187–202"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/your-year-1953-sample.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": ""
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1953.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1953",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/cars-1957-b.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/kitchen/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Three recipes from 1950, on the house"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-b.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/sources/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Our sources & method"
+    },
+    {
+      "url": "http://127.0.0.1:8115/about/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "About Make It Do"
+    },
+    {
+      "url": "http://127.0.0.1:8115/accessibility/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Accessibility"
+    },
+    {
+      "url": "http://127.0.0.1:8115/terms.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "Terms & order information"
+    },
+    {
+      "url": "https://makeitdoshow.com/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://makeitdoshow.com/year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/year/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/year/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1930/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1930"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1931/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1931"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1932/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1932"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1933/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1933"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1934/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1934"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1935/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1935"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1936/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1936"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1938/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1938"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1937/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1937"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1939/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1939"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1940/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1940"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1941/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1941"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1944/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1944"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1943/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1943"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1942/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1942"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1945/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1945"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1947/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1947"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1946/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1946"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1949/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1949"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1950/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1950"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1948/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1948"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1951/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1951"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1954/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1954"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1952/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1952"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1956/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1956"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1957/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1957"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1955/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1955"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1958/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1958"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1959/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1959"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1960/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1960"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1962/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1962"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1963/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1963"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1961/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1961"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1964/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1964"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1965/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1965"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1966/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1966"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1967/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1967"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1968/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1968"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1969/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1969"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1972/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1972"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1971/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1971"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1970/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1970"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1973/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1973"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1975/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1975"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950s-life/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/1974/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/year/",
+      "failureDetails": [],
+      "displayText": "1974"
+    },
+    {
+      "url": "https://www.eia.gov/totalenergy/data/annual/showtext.php?t=ptb0524",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/",
+      "failureDetails": [],
+      "displayText": "EIA, Annual Energy Review, table 5.24: regular gasoline, nominal prices"
+    },
+    {
+      "url": "https://makeitdoshow.com/1950s-life/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950s-life/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/cars-1957-b.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950s-life/"
+    },
+    {
+      "url": "https://makeitdoshow.com/gifts/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/gifts/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/gifts/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/sample-2.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/gifts/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/sample-7.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/gifts/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/sample-14.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/gifts/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.dol.gov/agencies/whd/minimum-wage/history/chart",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950s-life/",
+      "failureDetails": [],
+      "displayText": "Department of Labor, History of Federal Minimum Wage Rates"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/privacy.html"
+    },
+    {
+      "url": "https://makeitdoshow.com/privacy.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": []
+    },
+    {
+      "url": "https://gumroad.com/privacy",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": [],
+      "displayText": "Gumroad privacy"
+    },
+    {
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": [],
+      "displayText": "GitHub privacy"
+    },
+    {
+      "url": "https://www.youtube.com/t/terms",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": [],
+      "displayText": "YouTube terms"
+    },
+    {
+      "url": "https://posthog.com/privacy",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": [],
+      "displayText": "PostHog privacy"
+    },
+    {
+      "url": "https://archive.org/details/Shopping1957",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950s-life/",
+      "failureDetails": [],
+      "displayText": "Shopping Can Be Fun (1957), promotional film, Prelinger Archives"
+    },
+    {
+      "url": "https://archive.org/details/Wordtoth1955",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950s-life/",
+      "failureDetails": [],
+      "displayText": "A Word to the Wives (1955), promotional film, Prelinger Archives"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1953/"
+    },
+    {
+      "url": "https://policies.google.com/privacy",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "failureDetails": [],
+      "displayText": "Google privacy"
+    },
+    {
+      "url": "https://makeitdoshow.com/1953/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1953/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1953.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "Download my 1953 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1953/"
+    },
+    {
+      "url": "https://about.usps.com/who/profile/history/domestic-letter-rates-since-1863.htm",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "USPS, Rates for Domestic Letters Since 1863"
+    },
+    {
+      "url": "https://myaccount.google.com/permissions",
+      "status": 401,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/privacy.html",
+      "displayText": "Google account permissions"
+    },
+    {
+      "url": "https://www.bls.gov/charts/consumer-price-index/consumer-price-index-average-price-data.htm",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "BLS Average Price Data: 2025 monthly observations"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1953"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1953"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1953"
+    },
+    {
+      "url": "https://makeitdoshow.com/kitchen/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/kitchen/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/kitchen/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/make-it-do-1950-recipe-cards.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Download the three free cards ↓"
+    },
+    {
+      "url": "https://data.bls.gov/timeseries/CUUR0000SA0",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "BLS Consumer Price Index, series CUUR0000SA0"
+    },
+    {
+      "url": "https://store.usps.com/store/stamps/0-82/_/N-1pz9hus",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "USPS, Forever stamps: 82¢, checked November 5, 2026"
+    },
+    {
+      "url": "https://www.ssa.gov/oact/babynames/limits.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1953/",
+      "failureDetails": [],
+      "displayText": "SSA national data and method"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/50/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/83/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/30/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/18/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/9/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/52/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/74/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/54/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/58/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/59/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/101/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/85/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/familyfarefoodma00unit/page/34/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/familyfarefoodma00unit/page/85/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/familyfarefoodma00unit/page/81/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/90/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/12/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/113/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/116/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/117/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/25/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1927unit/page/15/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/30/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/39/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/15/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/56/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/103/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/108/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/135/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/auntsammysradior1931unit/page/136/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/lambasyoulikeit28ale/page/n9/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/eggsatanymea39alex/page/5/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/eggsatanymea39alex/page/7/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/cookingcuredpork81alex/page/8/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/meatdishesatlowc216unit/page/2/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/meatdishesatlowc216unit/page/10/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/cookingamericanv112stie/page/6/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/cookingamericanv112stie/page/n9/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/honeysomeofitsus113whit/page/7/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/honeysomeofitsus113whit/page/8/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205273/page/17/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205273/page/18/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205273/page/19/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205273/page/20/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205287/page/15/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87205287/page/16/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10506361/page/n9/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10506361/page/n10/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10506361/page/n13/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10506361/page/n15/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10506361/page/n16/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/cheeseinyourmeal16unit/page/n4/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/cheeseinyourmeal16unit/page/n3/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/driedbeanspeasin47unit/page/n3/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/driedbeanspeasin47unit/page/n4/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/potatoesinpopula85unit/page/n3/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/potatoesinpopula85unit/page/n4/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/eggdishesforanym89unit/page/n6/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/eggdishesforanym89unit_0/page/9/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10679523/page/n7/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT10679523/page/n5/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87203737/page/24/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/CAT87203737/page/29/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/rootvegetablesin39unit/page/n3/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://archive.org/details/tomatoesonyourta104unit/page/n4/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/sources/"
+    },
+    {
+      "url": "https://makeitdoshow.com/sources/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/sources/"
+    },
+    {
+      "url": "https://archive.org/details/CAT10679523/page/n3/mode/1up",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "Check the original page scan ↗"
+    },
+    {
+      "url": "https://makeitdoshow.com/about/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/about/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/about/"
+    },
+    {
+      "url": "https://www.youtube.com/@bibleasitwas",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/about/",
+      "failureDetails": [],
+      "displayText": "The Bible As It Was"
+    },
+    {
+      "url": "https://archive.org/details/familyfarefoodma00unit",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/kitchen/",
+      "failureDetails": [],
+      "displayText": "USDA, Family Fare (1950), Home and Garden Bulletin No. 1"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/accessibility/"
+    },
+    {
+      "url": "https://www.youtube.com/@largeprintTV",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/about/",
+      "failureDetails": [],
+      "displayText": "The Large Print"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/terms.html"
+    },
+    {
+      "url": "https://makeitdoshow.com/1930/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1930/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1930/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1930/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1930.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1930/",
+      "failureDetails": [],
+      "displayText": "Download my 1930 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1930.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1930/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1930",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1930/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/terms.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/terms.html",
+      "failureDetails": []
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1931/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1931/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1931.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1931/",
+      "failureDetails": [],
+      "displayText": "Download my 1931 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1931.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1931/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1931",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1931/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/accessibility/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/accessibility/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1932/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1932/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1932.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1932/",
+      "failureDetails": [],
+      "displayText": "Download my 1932 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1932.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1932/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1932",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1932/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1931/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1931/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1933/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1933/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1933.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1933/",
+      "failureDetails": [],
+      "displayText": "Download my 1933 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1933.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1933/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1933",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1933/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1933/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1933/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1934/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1934/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1934.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1934/",
+      "failureDetails": [],
+      "displayText": "Download my 1934 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1934.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1934/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1934",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1934/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1932/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1932/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1935/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1935/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1935.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1935/",
+      "failureDetails": [],
+      "displayText": "Download my 1935 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1935.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1935/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1935",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1935/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1935/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1935/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1936/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1936/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1936.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1936/",
+      "failureDetails": [],
+      "displayText": "Download my 1936 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1936.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1936/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1936",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1936/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1934/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1934/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1938/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1938/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1938.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1938/",
+      "failureDetails": [],
+      "displayText": "Download my 1938 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1938.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1938/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1938",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1938/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1936/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1936/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1937/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1937/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1937.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1937/",
+      "failureDetails": [],
+      "displayText": "Download my 1937 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1937.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1937/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1937",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1937/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1938/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1938/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1939/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1939/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1939.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1939/",
+      "failureDetails": [],
+      "displayText": "Download my 1939 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1939.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1939/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1939",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1939/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1939/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1939/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1940/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1940/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1940.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1940/",
+      "failureDetails": [],
+      "displayText": "Download my 1940 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1940.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1940/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1940",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1940/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1937/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1937/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1941/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1941/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1941.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1941/",
+      "failureDetails": [],
+      "displayText": "Download my 1941 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1941.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1941/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1941",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1941/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1941/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1941/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1944/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1944/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1944.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1944/",
+      "failureDetails": [],
+      "displayText": "Download my 1944 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1944.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1944/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1944",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1944/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1940/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1940/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1943/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1943/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1943.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1943/",
+      "failureDetails": [],
+      "displayText": "Download my 1943 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1943.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1943/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1943",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1943/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1944/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1944/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1942/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1942/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1942.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1942/",
+      "failureDetails": [],
+      "displayText": "Download my 1942 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1942.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1942/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1942",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1942/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1942/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1942/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1945/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1945/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1945.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1945/",
+      "failureDetails": [],
+      "displayText": "Download my 1945 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1945.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1945/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1945",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1945/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1945/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1945/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1947/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1947/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1947.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1947/",
+      "failureDetails": [],
+      "displayText": "Download my 1947 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1947.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1947/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1947",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1947/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1943/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1943/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1946/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1946/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1946.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1946/",
+      "failureDetails": [],
+      "displayText": "Download my 1946 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1946.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1946/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1946",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1946/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1947/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1947/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1949/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1949/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1949.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1949/",
+      "failureDetails": [],
+      "displayText": "Download my 1949 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1949.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1949/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1949",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1949/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1950/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1950/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1950.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950/",
+      "failureDetails": [],
+      "displayText": "Download my 1950 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1950.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1950",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1950/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1946/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1946/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1948/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1948/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1948.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1948/",
+      "failureDetails": [],
+      "displayText": "Download my 1948 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1948.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1948/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1948",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1948/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1949/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1949/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1951/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1951/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1951.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1951/",
+      "failureDetails": [],
+      "displayText": "Download my 1951 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/1948/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1948/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1951.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1951/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1951",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1951/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1954/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1954/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1954.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1954/",
+      "failureDetails": [],
+      "displayText": "Download my 1954 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1954.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1954/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1954",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1954/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1951/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1951/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1952/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1952/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1952.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1952/",
+      "failureDetails": [],
+      "displayText": "Download my 1952 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1952.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1952/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1952",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1952/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1954/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1954/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1957/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1957/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1957.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1957/",
+      "failureDetails": [],
+      "displayText": "Download my 1957 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1957.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1957/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1957",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1957/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1957/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1957/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1955/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1955/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1955.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1955/",
+      "failureDetails": [],
+      "displayText": "Download my 1955 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1955.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1955/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1955",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1955/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://www.ssa.gov/oact/babynames/decades/names1950s.html",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/sources/",
+      "failureDetails": [],
+      "displayText": "Social Security Administration, Popular Baby Names"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1956/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1956/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1956.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1956/",
+      "failureDetails": [],
+      "displayText": "Download my 1956 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1956.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1956/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1956",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1956/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1952/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1952/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1958/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1958/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1958.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1958/",
+      "failureDetails": [],
+      "displayText": "Download my 1958 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1958.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1958/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1958",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1958/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1958/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1958/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1959/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1959/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1959.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1959/",
+      "failureDetails": [],
+      "displayText": "Download my 1959 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1959.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1959/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1959",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1959/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1955/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1955/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1960/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1960/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1960.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1960/",
+      "failureDetails": [],
+      "displayText": "Download my 1960 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1960.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1960/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1960",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1960/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1956/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1956/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1962/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1962/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1962.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1962/",
+      "failureDetails": [],
+      "displayText": "Download my 1962 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1962.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1962/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1962",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1962/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1960/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1960/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1963/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1963/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1963.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1963/",
+      "failureDetails": [],
+      "displayText": "Download my 1963 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1963.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1963/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1963",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1963/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1959/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1959/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1961/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1961/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1961.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1961/",
+      "failureDetails": [],
+      "displayText": "Download my 1961 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1961.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1961/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1961",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1961/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1962/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1962/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1964/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1964/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1964.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1964/",
+      "failureDetails": [],
+      "displayText": "Download my 1964 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1964.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1964/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1964",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1964/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1964/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1964/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1965/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1965/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1965.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1965/",
+      "failureDetails": [],
+      "displayText": "Download my 1965 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1965.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1965/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1965",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1965/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1963/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1963/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1966/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1966/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1966.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1966/",
+      "failureDetails": [],
+      "displayText": "Download my 1966 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1966.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1966/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1966",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1966/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1961/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1961/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1967/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1967/"
+    },
+    {
+      "url": "https://makeitdoshow.com/1966/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1966/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1967.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1967/",
+      "failureDetails": [],
+      "displayText": "Download my 1967 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1967.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1967/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1967",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1967/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1968/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1968/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1968.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1968/",
+      "failureDetails": [],
+      "displayText": "Download my 1968 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1968.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1968/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://makeitdoshow.com/1965/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1965/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1968",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1968/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1969/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1969/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1969.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1969/",
+      "failureDetails": [],
+      "displayText": "Download my 1969 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1969.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1969/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1969",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1969/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1968/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1968/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1972/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1972/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1972.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1972/",
+      "failureDetails": [],
+      "displayText": "Download my 1972 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/1967/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1967/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1971/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1971/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1971.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1971/",
+      "failureDetails": [],
+      "displayText": "Download my 1971 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/1971/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1971/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1970/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1970/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1970.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1970/",
+      "failureDetails": [],
+      "displayText": "Download my 1970 sheet ↓"
+    },
+    {
+      "url": "http://127.0.0.1:8115/assets/img/book-1970.webp",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1970/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://127.0.0.1:8115/your-year/?year=1970",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1970/",
+      "failureDetails": [],
+      "displayText": "Choose a year & see the booklet"
+    },
+    {
+      "url": "https://makeitdoshow.com/1969/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1969/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1973/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1973/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1973.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1973/",
+      "failureDetails": [],
+      "displayText": "Download my 1973 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/1972/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1972/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1975/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1975/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1975.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1975/",
+      "failureDetails": [],
+      "displayText": "Download my 1975 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/1973/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1973/"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1974/"
+    },
+    {
+      "url": "https://makeitdoshow.com/data/years.json",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1974/"
+    },
+    {
+      "url": "http://127.0.0.1:8115/downloads/what-things-cost-1974.pdf",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://127.0.0.1:8115/1974/",
+      "failureDetails": [],
+      "displayText": "Download my 1974 sheet ↓"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1930"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1930"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1930"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1931"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1931"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1931"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1932"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1932"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1932"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1933"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1933"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1933"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1934"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1934"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1934"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1935"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1935"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1935"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1936"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1936"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1936"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1938"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1938"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1938"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1937"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1937"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1937"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1939"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1939"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1939"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1940"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1940"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1940"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1941"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1941"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1941"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1944"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1944"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1944"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1943"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1943"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1943"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1942"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1942"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1942"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1945"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1945"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1945"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1947"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1947"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1947"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1946"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1946"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1946"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1949"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1949"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1949"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1950"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1950"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1950"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1948"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1948"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1948"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1951"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1951"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1951"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1954"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1954"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1954"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1952"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1952"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1952"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1957"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1957"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1957"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1955"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1955"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1955"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1956"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1956"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1956"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1958"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1958"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1958"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1959"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1959"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1959"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1960"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1960"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1960"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1962"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1962"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1962"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1963"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1963"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1963"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1961"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1961"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1961"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1964"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1964"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1964"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1965"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1965"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1965"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1966"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1966"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1966"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1967"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1967"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1967"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1968"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1968"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1968"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1969"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1969"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1969"
+    },
+    {
+      "url": "https://makeitdoshow.com/your-year/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1970"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/kitchen-1955-c.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1970"
+    },
+    {
+      "url": "https://makeitdoshow.com/assets/img/book-1953.webp",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/your-year/?year=1970"
+    },
+    {
+      "url": "https://makeitdoshow.com/1975/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1975/"
+    },
+    {
+      "url": "https://makeitdoshow.com/1970/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1970/"
+    },
+    {
+      "url": "https://makeitdoshow.com/1974/",
+      "status": 404,
+      "state": "BROKEN",
+      "parent": "http://127.0.0.1:8115/1974/"
+    }
+  ],
+  "passed": false
+}

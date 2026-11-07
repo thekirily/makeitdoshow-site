@@ -1,0 +1,3627 @@
+{
+  "scope": "Local HTTP preview, one run per template/device, simulated throttling; NOT field data.",
+  "results": [
+    {
+      "name": "home",
+      "route": "/",
+      "device": "mobile",
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 902.6867,
+      "cls": 0,
+      "tbt_ms": 150,
+      "bytes": 134719,
+      "failures": [
+        "seo",
+        "tbt_ms"
+      ],
+      "load": [
+        1.63525390625,
+        2.11474609375,
+        1.970703125
+      ],
+      "seconds": 12.8,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:51:22.214Z",
+      "failed_audits": {
+        "total-blocking-time": {
+          "title": "Total Blocking Time",
+          "score": 0.94,
+          "details": null
+        },
+        "max-potential-fid": {
+          "title": "Max Potential First Input Delay",
+          "score": 0.42,
+          "details": null
+        },
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 10850,
+                "wastedPercent": 51.85468451242829,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 10850,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-c.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32791,
+                "wastedBytes": 32791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 123836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 6857,
+              "wastedBytes": 6857
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-1-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,0,SECTION,1,FIGURE,1,IMG",
+                  "selector": "main#main > section.home-hero > figure.hero-film > img",
+                  "boundingRect": {
+                    "top": 857,
+                    "bottom": 1143,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 286
+                  },
+                  "snippet": "<img data-ab-slot=\"hero\" src=\"/assets/img/kitchen-1955-c.webp\" alt=\"A peach and turquoise American kitchen from the 1955 film A Word to the Wi\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "A peach and turquoise American kitchen from the 1955 film A Word to the Wives"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-c.webp",
+                "totalBytes": 32602,
+                "wastedBytes": 23493,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1246x960) for its displayed dimensions (668x501). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 23493
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 23493
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "B63403F38B28C2FA2E22C12F3F2FFF5C": {
+                      "url": "http://127.0.0.1:8115/",
+                      "navStartToEndTime": 39,
+                      "transferSize": 10423,
+                      "isLongest": true,
+                      "children": {
+                        "2759322.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 46,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2759322.12": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 221,
+                              "transferSize": 11321,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2759322.11": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 204,
+                              "transferSize": 10749,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2759322.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 48,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 221
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 301
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 301
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "device": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 363.38054999999997,
+      "cls": 0.000101,
+      "tbt_ms": 0,
+      "bytes": 177266,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.42041015625,
+        2.04296875,
+        1.94921875
+      ],
+      "seconds": 12.9,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:51:35.146Z",
+      "failed_audits": {
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 13718,
+                "wastedPercent": 65.55927342256214,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 13718,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/book-1953.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 42547,
+                "wastedBytes": 42547
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-c.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32791,
+                "wastedBytes": 32791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 166383
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 6857,
+              "wastedBytes": 6857
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-5-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,3,SECTION,0,DIV,0,A,0,IMG",
+                  "selector": "section#book > div.book-display > a > img",
+                  "boundingRect": {
+                    "top": 1816,
+                    "bottom": 2252,
+                    "left": 137,
+                    "right": 479,
+                    "width": 342,
+                    "height": 436
+                  },
+                  "snippet": "<img src=\"/assets/img/book-1953.webp\" alt=\"Digital cover preview for the 1953 Your Year, in Color booklet\" width=\"900\" height=\"1182\" class=\"\" loading=\"lazy\" decoding=\"async\">",
+                  "nodeLabel": "Digital cover preview for the 1953 Your Year, in Color booklet"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/book-1953.webp",
+                "totalBytes": 42358,
+                "wastedBytes": 37003,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (900x1182) for its displayed dimensions (320x420). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 37003
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,0,SECTION,1,FIGURE,1,IMG",
+                  "selector": "main#main > section.home-hero > figure.hero-film > img",
+                  "boundingRect": {
+                    "top": 249,
+                    "bottom": 806,
+                    "left": 685,
+                    "right": 1287,
+                    "width": 602,
+                    "height": 557
+                  },
+                  "snippet": "<img data-ab-slot=\"hero\" src=\"/assets/img/kitchen-1955-c.webp\" alt=\"A peach and turquoise American kitchen from the 1955 film A Word to the Wi\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "A peach and turquoise American kitchen from the 1955 film A Word to the Wives"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/kitchen-1955-c.webp",
+                "totalBytes": 32602,
+                "wastedBytes": 19045,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1037x960) for its displayed dimensions (743x557). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 19045
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 56048
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "6068F5882E9D37591476FDD64F9BF93A": {
+                      "url": "http://127.0.0.1:8115/",
+                      "navStartToEndTime": 70,
+                      "transferSize": 10423,
+                      "isLongest": true,
+                      "children": {
+                        "2759894.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 80,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2759894.11": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 238,
+                              "transferSize": 10749,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2759894.12": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 237,
+                              "transferSize": 11321,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2759894.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 81,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 238
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 81
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 81
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "directory",
+      "route": "/year/",
+      "device": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 902.4124999999999,
+      "cls": 0,
+      "tbt_ms": 0,
+      "bytes": 99636,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.35546875,
+        2.00830078125,
+        1.9384765625
+      ],
+      "seconds": 12.9,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:51:48.050Z",
+      "failed_audits": {
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 15581,
+                "wastedPercent": 74.46462715105162,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 15581,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 91045
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 5322,
+              "wastedBytes": 5322
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "D7B321BE372741343E23991728C2AD39": {
+                      "url": "http://127.0.0.1:8115/year/",
+                      "navStartToEndTime": 38,
+                      "transferSize": 8131,
+                      "isLongest": true,
+                      "children": {
+                        "2760725.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 55,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2760725.8": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 165,
+                              "transferSize": 11321,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2760725.7": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 164,
+                              "transferSize": 10749,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2760725.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 55,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 165
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 301
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 301
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "directory",
+      "route": "/year/",
+      "device": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 242.64639999999997,
+      "cls": 6.5e-05,
+      "tbt_ms": 0,
+      "bytes": 99636,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.56005859375,
+        2.0234375,
+        1.94482421875
+      ],
+      "seconds": 12.9,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:52:00.947Z",
+      "failed_audits": {
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 17132,
+                "wastedPercent": 81.87858508604207,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 17132,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 91045
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 5322,
+              "wastedBytes": 5322
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "5CFD220EE2B4307F4C178BAEA2B261F8": {
+                      "url": "http://127.0.0.1:8115/year/",
+                      "navStartToEndTime": 96,
+                      "transferSize": 8131,
+                      "isLongest": true,
+                      "children": {
+                        "2761501.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 102,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2761501.8": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 217,
+                              "transferSize": 11321,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2761501.7": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 207,
+                              "transferSize": 10749,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2761501.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 106,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 217
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 81
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 81
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "year-full",
+      "route": "/1953/",
+      "device": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 1052.4941,
+      "cls": 0.010424,
+      "tbt_ms": 19.376475000000028,
+      "bytes": 148751,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.5712890625,
+        2.00537109375,
+        1.9404296875
+      ],
+      "seconds": 13.3,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:52:13.996Z",
+      "failed_audits": {
+        "max-potential-fid": {
+          "title": "Max Potential First Input Delay",
+          "score": 0.47,
+          "details": null
+        },
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 11559,
+                "wastedPercent": 55.24378585086042,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 11559,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 37791,
+                "wastedBytes": 37791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 128836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 12909,
+              "wastedBytes": 12909
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-3-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,1,SECTION,1,FIGURE,0,IMG",
+                  "selector": "main#main > section.year-hero > figure.year-photo > img",
+                  "boundingRect": {
+                    "top": 877,
+                    "bottom": 1125,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 248
+                  },
+                  "snippet": "<img src=\"/assets/img/market-1957-b.webp\" alt=\"The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1957"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "totalBytes": 37602,
+                "wastedBytes": 26660,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1280x853) for its displayed dimensions (651x488). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 26660
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 26660
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "81D044277D739939C3F3FB2D2B9B536D": {
+                      "url": "http://127.0.0.1:8115/1953/",
+                      "navStartToEndTime": 49,
+                      "transferSize": 19455,
+                      "isLongest": true,
+                      "children": {
+                        "2762370.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 57,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2762370.9": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 215,
+                              "transferSize": 10749,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2762370.10": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 214,
+                              "transferSize": 11321,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2762370.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 62,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 215
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 301
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 151
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "year-full",
+      "route": "/1953/",
+      "device": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 403.50475,
+      "cls": 0.00019,
+      "tbt_ms": 0,
+      "bytes": 148751,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.9580078125,
+        2.0712890625,
+        1.962890625
+      ],
+      "seconds": 12.9,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:52:27.152Z",
+      "failed_audits": {
+        "max-potential-fid": {
+          "title": "Max Potential First Input Delay",
+          "score": 0.99,
+          "details": null
+        },
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 14479,
+                "wastedPercent": 69.19694072657744,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 14479,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 37791,
+                "wastedBytes": 37791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 128836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 12909,
+              "wastedBytes": 12909
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,1,SECTION,1,FIGURE,0,IMG",
+                  "selector": "main#main > section.year-hero > figure.year-photo > img",
+                  "boundingRect": {
+                    "top": 260,
+                    "bottom": 720,
+                    "left": 726,
+                    "right": 1287,
+                    "width": 561,
+                    "height": 460
+                  },
+                  "snippet": "<img src=\"/assets/img/market-1957-b.webp\" alt=\"The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1957"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "totalBytes": 37602,
+                "wastedBytes": 28161,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1171x960) for its displayed dimensions (614x460). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 28161
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 28161
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "AF597B977C87BA7000615BE603469950": {
+                      "url": "http://127.0.0.1:8115/1953/",
+                      "navStartToEndTime": 36,
+                      "transferSize": 19455,
+                      "isLongest": true,
+                      "children": {
+                        "2763266.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 47,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2763266.10": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 203,
+                              "transferSize": 11321,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2763266.9": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 202,
+                              "transferSize": 10749,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2763266.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 48,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 203
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 81
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "year-pre-wage",
+      "route": "/1930/",
+      "device": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 1052.1962,
+      "cls": 0.01047,
+      "tbt_ms": 18.450950000000034,
+      "bytes": 147107,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.88818359375,
+        2.05126953125,
+        1.95849609375
+      ],
+      "seconds": 13.0,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:52:40.055Z",
+      "failed_audits": {
+        "max-potential-fid": {
+          "title": "Max Potential First Input Delay",
+          "score": 0.49,
+          "details": null
+        },
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 11596,
+                "wastedPercent": 55.4206500956023,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 11596,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 37791,
+                "wastedBytes": 37791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 128836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 11807,
+              "wastedBytes": 11807
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-3-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,1,SECTION,1,FIGURE,0,IMG",
+                  "selector": "main#main > section.year-hero > figure.year-photo > img",
+                  "boundingRect": {
+                    "top": 845,
+                    "bottom": 1093,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 248
+                  },
+                  "snippet": "<img src=\"/assets/img/market-1957-b.webp\" alt=\"The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1957"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "totalBytes": 37602,
+                "wastedBytes": 26660,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1280x853) for its displayed dimensions (651x488). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 26660
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 26660
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "4F384166807DD8832BD8C70F4EA8DC2B": {
+                      "url": "http://127.0.0.1:8115/1930/",
+                      "navStartToEndTime": 53,
+                      "transferSize": 17811,
+                      "isLongest": true,
+                      "children": {
+                        "2763456.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 67,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2763456.10": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 217,
+                              "transferSize": 11321,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2763456.9": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 216,
+                              "transferSize": 10749,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2763456.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 67,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 217
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 301
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 151
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "year-pre-wage",
+      "route": "/1930/",
+      "device": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 405.09970000000004,
+      "cls": 0.00019,
+      "tbt_ms": 5.300099999999986,
+      "bytes": 147107,
+      "failures": [
+        "seo"
+      ],
+      "load": [
+        1.75146484375,
+        2.01611328125,
+        1.94775390625
+      ],
+      "seconds": 12.9,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:52:53.025Z",
+      "failed_audits": {
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 14479,
+                "wastedPercent": 69.19694072657744,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 14479,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 37791,
+                "wastedBytes": 37791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 128836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 11807,
+              "wastedBytes": 11807
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-0-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,1,SECTION,1,FIGURE,0,IMG",
+                  "selector": "main#main > section.year-hero > figure.year-photo > img",
+                  "boundingRect": {
+                    "top": 260,
+                    "bottom": 720,
+                    "left": 726,
+                    "right": 1287,
+                    "width": 561,
+                    "height": 460
+                  },
+                  "snippet": "<img src=\"/assets/img/market-1957-b.webp\" alt=\"The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1957"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "totalBytes": 37602,
+                "wastedBytes": 28161,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1171x960) for its displayed dimensions (614x460). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 28161
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 28161
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "D1AE3FEDD3686D236F8EC62FD8A83602": {
+                      "url": "http://127.0.0.1:8115/1930/",
+                      "navStartToEndTime": 90,
+                      "transferSize": 17811,
+                      "isLongest": true,
+                      "children": {
+                        "2764153.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 100,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2764153.9": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 260,
+                              "transferSize": 10749,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2764153.10": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 259,
+                              "transferSize": 11321,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2764153.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 101,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 260
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 82
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "year-partial",
+      "route": "/1975/",
+      "device": "mobile",
+      "scores": {
+        "performance": 91,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 92
+      },
+      "lcp_ms": 902.7529,
+      "cls": 0.00947,
+      "tbt_ms": 375.12355,
+      "bytes": 143123,
+      "failures": [
+        "performance",
+        "seo",
+        "tbt_ms"
+      ],
+      "load": [
+        1.57861328125,
+        1.96533203125,
+        1.93212890625
+      ],
+      "seconds": 13.5,
+      "version": "13.6.0",
+      "fetch_time": "2026-11-07T14:53:06.328Z",
+      "failed_audits": {
+        "total-blocking-time": {
+          "title": "Total Blocking Time",
+          "score": 0.7,
+          "details": null
+        },
+        "max-potential-fid": {
+          "title": "Max Potential First Input Delay",
+          "score": 0.24,
+          "details": null
+        },
+        "unminified-javascript": {
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "totalBytes": 11447,
+                "wastedBytes": 2135,
+                "wastedPercent": 18.651174980344198
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 2135,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "unused-css-rules": {
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "details": {
+            "type": "opportunity",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "wastedBytes": 13034,
+                "wastedPercent": 62.29445506692161,
+                "totalBytes": 20924
+              }
+            ],
+            "overallSavingsMs": 0,
+            "overallSavingsBytes": 13034,
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "metricSavings": {
+                "FCP": 0,
+                "LCP": 0
+              }
+            }
+          }
+        },
+        "robots-txt": {
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "details": null
+        },
+        "cache-insight": {
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 37791,
+                "wastedBytes": 37791
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/sourceserif4-display.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 32669,
+                "wastedBytes": 32669
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21111,
+                "wastedBytes": 21111
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11641,
+                "wastedBytes": 11641
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 11321,
+                "wastedBytes": 11321
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 10749,
+                "wastedBytes": 10749
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3554,
+                "wastedBytes": 3554
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 128836
+            }
+          }
+        },
+        "document-latency-insight": {
+          "title": "Document request latency",
+          "score": 0.5,
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responds quickly (observed 1 ms)",
+                "value": true
+              },
+              "usesCompression": {
+                "label": "No compression applied",
+                "value": false
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 1,
+              "uncompressedResponseBytes": 9138,
+              "wastedBytes": 9138
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "title": "Improve image delivery",
+          "score": 0.5,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-4-IMG",
+                  "path": "1,HTML,1,BODY,4,MAIN,1,SECTION,1,FIGURE,0,IMG",
+                  "selector": "main#main > section.year-hero > figure.year-photo > img",
+                  "boundingRect": {
+                    "top": 755,
+                    "bottom": 1003,
+                    "left": 20,
+                    "right": 392,
+                    "width": 372,
+                    "height": 248
+                  },
+                  "snippet": "<img src=\"/assets/img/market-1957-b.webp\" alt=\"The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1\u2026\" width=\"1280\" height=\"960\" class=\"\" fetchpriority=\"high\" decoding=\"async\">",
+                  "nodeLabel": "The meat counter at Hillsdale Shopping Center, San Mateo, California, in 1957"
+                },
+                "url": "http://127.0.0.1:8115/assets/img/market-1957-b.webp",
+                "totalBytes": 37602,
+                "wastedBytes": 26660,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1280x853) for its displayed dimensions (651x488). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 26660
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 26660
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "title": "Network dependency tree",
+          "score": 0,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "E00083F9792823F2E719AF155E3EB48A": {
+                      "url": "http://127.0.0.1:8115/1975/",
+                      "navStartToEndTime": 154,
+                      "transferSize": 13827,
+                      "isLongest": true,
+                      "children": {
+                        "2764630.3": {
+                          "url": "http://127.0.0.1:8115/assets/site.css",
+                          "navStartToEndTime": 163,
+                          "transferSize": 21111,
+                          "isLongest": true,
+                          "children": {
+                            "2764630.8": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-400.woff2",
+                              "navStartToEndTime": 329,
+                              "transferSize": 10749,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "2764630.9": {
+                              "url": "http://127.0.0.1:8115/assets/fonts/tablebook-700.woff2",
+                              "navStartToEndTime": 328,
+                              "transferSize": 11321,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "2764630.4": {
+                          "url": "http://127.0.0.1:8115/assets/experiments.js",
+                          "navStartToEndTime": 166,
+                          "transferSize": 3554,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 329
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "No origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "render-blocking-insight": {
+          "title": "Render-blocking requests",
+          "score": 0,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://127.0.0.1:8115/assets/experiments.js",
+                "totalBytes": 3554,
+                "wastedMs": 301
+              },
+              {
+                "url": "http://127.0.0.1:8115/assets/site.css",
+                "totalBytes": 21111,
+                "wastedMs": 301
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
