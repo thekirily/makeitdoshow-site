@@ -1,0 +1,20 @@
+{
+  "name": "makeitdo-launch-checks",
+  "private": true,
+  "scripts": {
+    "ab_smoke": "python3 tests/ab_smoke.py",
+    "audit:browser": "python3 scripts/audit_browser.py"
+  },
+  "devDependencies": {
+    "axe-core": "4.11.0",
+    "lighthouse": "13.6.0",
+    "linkinator": "8.1.0",
+    "vnu-jar": "26.11.4"
+  },
+  "overrides": {
+    "uuid": "11.1.1",
+    "linkinator": {
+      "glob": "14.0.4"
+    }
+  }
+}

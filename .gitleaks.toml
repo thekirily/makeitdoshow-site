@@ -1,0 +1,10 @@
+# Keep the complete upstream ruleset. This exact public flag slug is not a credential.
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+  [[rules.allowlists]]
+  description = "Exact public PostHog presentation flag name, not a project or personal API token"
+  regexTarget = "secret"
+  regexes = ['''^launch-presentation-v1$''']

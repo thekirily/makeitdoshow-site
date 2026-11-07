@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /evidence/
+Disallow: /docs/
+Disallow: /scripts/
+Disallow: /thanks/
+Sitemap: https://makeitdoshow.com/sitemap.xml

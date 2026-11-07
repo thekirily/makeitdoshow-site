@@ -1,0 +1,114 @@
+{
+  "scope": "Shared eight-core local host, simulated throttling. Raw variation retained, not a live measurement.",
+  "source_sha256": "3fd4ea64774f3394b9afcd34b82aad542b8a7fe28ab289993e6495b21822a660",
+  "results": [
+    {
+      "page": "/",
+      "device": "mobile",
+      "runs": 3,
+      "performance_scores": [
+        58,
+        91,
+        84
+      ],
+      "performance_median": 84,
+      "accessibility_scores": [
+        100,
+        100,
+        100
+      ],
+      "LCP_ms": [
+        3720,
+        1744,
+        1286
+      ],
+      "LCP_median_ms": 1744
+    },
+    {
+      "page": "/",
+      "device": "desktop",
+      "runs": 1,
+      "performance_scores": [
+        100
+      ],
+      "performance_median": 100,
+      "accessibility_scores": [
+        100
+      ],
+      "LCP_ms": [
+        468
+      ],
+      "LCP_median_ms": 468
+    },
+    {
+      "page": "/1953/",
+      "device": "mobile",
+      "runs": 1,
+      "performance_scores": [
+        99
+      ],
+      "performance_median": 99,
+      "accessibility_scores": [
+        100
+      ],
+      "LCP_ms": [
+        1291
+      ],
+      "LCP_median_ms": 1291
+    },
+    {
+      "page": "/your-year/",
+      "device": "mobile",
+      "runs": 3,
+      "performance_scores": [
+        71,
+        98,
+        94
+      ],
+      "performance_median": 94,
+      "accessibility_scores": [
+        100,
+        100,
+        100
+      ],
+      "LCP_ms": [
+        2914,
+        2165,
+        2121
+      ],
+      "LCP_median_ms": 2165
+    },
+    {
+      "page": "/gifts/",
+      "device": "mobile",
+      "runs": 1,
+      "performance_scores": [
+        98
+      ],
+      "performance_median": 98,
+      "accessibility_scores": [
+        100
+      ],
+      "LCP_ms": [
+        925
+      ],
+      "LCP_median_ms": 925
+    },
+    {
+      "page": "/1950s-life/",
+      "device": "mobile",
+      "runs": 1,
+      "performance_scores": [
+        98
+      ],
+      "performance_median": 98,
+      "accessibility_scores": [
+        100
+      ],
+      "LCP_ms": [
+        1648
+      ],
+      "LCP_median_ms": 1648
+    }
+  ]
+}

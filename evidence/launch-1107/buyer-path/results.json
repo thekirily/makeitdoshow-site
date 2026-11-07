@@ -1,0 +1,63 @@
+{
+  "viewport": "390x844",
+  "steps": [
+    {
+      "step": "01-youtube-channel",
+      "url": "https://www.youtube.com/@makeitdo/videos",
+      "status": 200,
+      "title": "Make It Do - YouTube",
+      "note": "First-film URL/description is not supplied or published in this repo; channel is only a source inspection, not proof of an actual description link.",
+      "body_excerpt": "IL\nSkip navigation\nSign in\nMake It Do\n@makeitdo\nHow ordinary Americans actually did it, 1930s to 1970s, with the paper to prove it. \n...more\nSubscribe\nThis channel doesn't have any content"
+    },
+    {
+      "step": "02-live-film-door",
+      "url": "https://makeitdoshow.com/01/?s=d&utm_source=youtube&utm_medium=description&utm_campaign=film01",
+      "status": 404,
+      "title": "Page not found \u00b7 GitHub Pages",
+      "note": "Planned description destination. Public main is different from this PR.",
+      "body_excerpt": "404\n\nFile not found\n\nThe site configured at this address does not contain the requested file.\n\nIf this is your site, make sure that the filename case matches the URL as well as any file permissions.\nFor root URLs (like http://example.com/) you must provide an index.html file.\n\nRead the full documentation for more information about using GitHub Pages.\n\nGitHub Status \u2014 @githubstatus"
+    },
+    {
+      "step": "03-preview-film-door",
+      "url": "http://127.0.0.1:8115/01/?s=d&utm_source=youtube&utm_medium=description&utm_campaign=film01",
+      "status": 200,
+      "title": "Welcome from the film \u00b7 Make It Do",
+      "note": "Local branch preview; not deployed.",
+      "body_excerpt": "Skip to content\nOrdinary days. Extraordinary memories.\nMake It Do.\nFind your year\nGifts for parents\nThe booklet\n\nWELCOME FROM THE FILM\n\nYou\u2019ve seen the world.\nNow find your year.\n\nFrom Everyday Life in 1950s America, in Real Color Film.\n\nWhat year were you born?\nFind my year\n\u2192\n\n1930\u20131975 \u00b7 Free to see and print \u00b7 No email needed\n\nHere for the free recipe cards? \u2192\n\nMake It Do.\n\nReal color film. The records people kept.\nThe ordinary days worth remembering.\n\n\u00a9 2026 Make It Do\n\nPrices by year\nYour Year, in Color\nFree recipe cards\nOur sources & method\nAbout Make It Do\nAccessibility\nPrivacy & analytics choices\nTerms & order information\nContact us\nWatch on YouTube \u2197"
+    },
+    {
+      "step": "05-preview-booklet",
+      "url": "http://127.0.0.1:8115/your-year/?year=1953#order",
+      "status": 200,
+      "title": "Your Year, in Color \u2014 a personalized $49 birth-year booklet \u00b7 Make It Do",
+      "note": "No checkout button while commerce is disabled; selected year visible.",
+      "body_excerpt": "Skip to content\nOrdinary days. Extraordinary memories.\nMake It Do.\nFind your year\nGifts for parents\nThe booklet\nHome\n/\nYour Year, in Color\n\nDigital cover preview \u00b7 Historical footage is dated inside.\n\nA LITTLE HISTORY. A VERY PERSONAL GIFT.\n\nYour Year,\nin Color.\n\nThe world they were born into, in a booklet they can hold.\n\nA 20-page keepsake with their first name on the cover. Real prices, popular baby names, two period recipes, color film frames, and room for the memories only they can add.\n\nLarge print, with 16-point body text\nPrinted booklet + a digital PDF copy\nBirth years 1930\u20131970\n\n$49\nU.S. shipping included\nApplicable tax shown at checkout\n\nChoose a year & see the booklet\nLook inside\n\n"
+    },
+    {
+      "step": "06-gumroad-product",
+      "url": "https://oldporchpress.gumroad.com/l/mid-your-year?wanted=true&variant=1953",
+      "status": 404,
+      "title": "Page not found (404) - Gumroad",
+      "note": "Direct existing product URL for inspection only. Stop before any payment; public draft is unavailable.",
+      "body_excerpt": "Page not found\n\nThe thing you were looking for doesn't exist.\n\nGo home?"
+    },
+    {
+      "step": "07-preview-thanks",
+      "url": "http://127.0.0.1:8115/thanks/",
+      "status": 200,
+      "title": "Your next step \u00b7 Make It Do",
+      "note": "Separate preview, not a successful return from a transaction and never proof of purchase.",
+      "body_excerpt": "Skip to content\nOrdinary days. Extraordinary memories.\nMake It Do.\nFind your year\nGifts for parents\nThe booklet\nHome\n/\nAfter checkout\n\nAFTER YOUR VISIT TO THE SHOP\n\nKeep a little\nof the everyday.\n\nIf you completed checkout, your Gumroad receipt contains your download and order details. Visiting this page by itself does not confirm or record a purchase.\n\nFor a printed order, check the year, cover name, and address in your receipt. Questions? Email Make It Do.\n\nFind another free year sheet\n\nThe $29 \u201cother year\u201d add-on is intended for an existing booklet order in the same parcel. It remains unavailable until the order service can confirm eligibility. There is no automatic second charge.\n\nMake I"
+    },
+    {
+      "step": "08-gumroad-owner-preview",
+      "url": "https://gumroad.com/login?next=%2Fproducts",
+      "status": 200,
+      "title": "Log in to Gumroad",
+      "note": "Read-only check for accessible owner product/receipt preview. No login, publication, or purchase attempted.",
+      "body_excerpt": "Sign up\nLog in\nGoogle\nX\nStripe\nor\nEmail\nPassword\nForgot your password?\nLogin\nLog in with a passkey"
+    }
+  ],
+  "payment_submitted": false,
+  "emails_sent": false
+}

@@ -1,0 +1,6 @@
+{
+  "device": "desktop",
+  "http_status": 429,
+  "message": "Validator returned an unusual-traffic/rate-limit interstitial on the second desktop attempt. No challenge bypass or further requests attempted.",
+  "verified": false
+}

@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+.env
+.env.*
+!.env.example
+*.local.json
+*.log
+.DS_Store
+.playwright-mcp/
+monitor-result.json

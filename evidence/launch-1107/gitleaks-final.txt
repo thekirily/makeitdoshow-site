@@ -1,0 +1,12 @@
+
+    ○
+    │╲
+    │ ○
+    ○ ░
+    ░    gitleaks
+
+5:54PM INF 17 commits scanned.
+5:54PM INF scanned ~43354220 bytes (43.35 MB) in 11.2s
+5:54PM INF no leaks found
+
+Exact public-flag allowlist regression previously passed: unrelated generated credential-shaped data remains detected.

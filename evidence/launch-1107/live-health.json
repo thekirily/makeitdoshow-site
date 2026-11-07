@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-11-07T14:37:14.064097+00:00",
+  "origin": "https://makeitdoshow.com",
+  "pass": true,
+  "checks": [
+    {
+      "kind": "http",
+      "path": "/",
+      "status": 200,
+      "url": "https://makeitdoshow.com/",
+      "seconds": 0.837,
+      "bytes": 1031,
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "1031",
+        "Server": "GitHub.com",
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Fri, 06 Nov 2026 01:55:08 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "ETag": "\"6aed337c-407\"",
+        "expires": "Sat, 07 Nov 2026 14:38:35 GMT",
+        "Cache-Control": "max-age=600",
+        "x-proxy-cache": "MISS",
+        "X-GitHub-Request-Id": "60BE:345741:784EE:91A9E:6AEF3593",
+        "x-github-edge-region": "switzerlandnorth",
+        "Accept-Ranges": "bytes",
+        "Age": "518",
+        "Date": "Sat, 07 Nov 2026 14:37:13 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-mrs1530066-MRS",
+        "X-Cache": "HIT",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1794062234.852866,VS0,VE2",
+        "Vary": "Accept-Encoding",
+        "X-Fastly-Request-ID": "6b6221bad557a74d2e78763016b6208957b33199"
+      },
+      "pass": true
+    },
+    {
+      "kind": "http",
+      "path": "/privacy.html",
+      "status": 200,
+      "url": "https://makeitdoshow.com/privacy.html",
+      "seconds": 0.568,
+      "bytes": 2244,
+      "headers": {
+        "Connection": "close",
+        "Content-Length": "2244",
+        "Server": "GitHub.com",
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Fri, 06 Nov 2026 01:55:08 GMT",
+        "Access-Control-Allow-Origin": "*",
+        "ETag": "\"6aed337c-8c4\"",
+        "expires": "Sat, 07 Nov 2026 14:47:13 GMT",
+        "Cache-Control": "max-age=600",
+        "x-proxy-cache": "MISS",
+        "X-GitHub-Request-Id": "E896:23B69E:7DFB9:97A96:6AEF3799",
+        "x-github-edge-region": "switzerlandnorth",
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Date": "Sat, 07 Nov 2026 14:37:13 GMT",
+        "Via": "1.1 varnish",
+        "X-Served-By": "cache-mrs1530031-MRS",
+        "X-Cache": "MISS",
+        "X-Cache-Hits": "0",
+        "X-Timer": "S1794062233.449419,VS0,VE132",
+        "Vary": "Accept-Encoding",
+        "X-Fastly-Request-ID": "4ab2ef8b6b55c90a3d53ad3c2ac39310c6891616"
+      },
+      "pass": true
+    },
+    {
+      "kind": "certificate",
+      "host": "makeitdoshow.com",
+      "expires": "2027-02-04T00:55:56+00:00",
+      "days_remaining": 88.43,
+      "pass": true
+    }
+  ]
+}

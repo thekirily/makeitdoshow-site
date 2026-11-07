@@ -1,0 +1,253 @@
+{
+  "count": 41,
+  "all_20_pages": true,
+  "all_contain_text": true,
+  "files": [
+    {
+      "file": "your-year-1930-interior.pdf",
+      "year": 1930,
+      "pages": 20,
+      "text_characters": 9466
+    },
+    {
+      "file": "your-year-1931-interior.pdf",
+      "year": 1931,
+      "pages": 20,
+      "text_characters": 9046
+    },
+    {
+      "file": "your-year-1932-interior.pdf",
+      "year": 1932,
+      "pages": 20,
+      "text_characters": 9044
+    },
+    {
+      "file": "your-year-1933-interior.pdf",
+      "year": 1933,
+      "pages": 20,
+      "text_characters": 9046
+    },
+    {
+      "file": "your-year-1934-interior.pdf",
+      "year": 1934,
+      "pages": 20,
+      "text_characters": 9732
+    },
+    {
+      "file": "your-year-1935-interior.pdf",
+      "year": 1935,
+      "pages": 20,
+      "text_characters": 9015
+    },
+    {
+      "file": "your-year-1936-interior.pdf",
+      "year": 1936,
+      "pages": 20,
+      "text_characters": 9214
+    },
+    {
+      "file": "your-year-1937-interior.pdf",
+      "year": 1937,
+      "pages": 20,
+      "text_characters": 9329
+    },
+    {
+      "file": "your-year-1938-interior.pdf",
+      "year": 1938,
+      "pages": 20,
+      "text_characters": 10447
+    },
+    {
+      "file": "your-year-1939-interior.pdf",
+      "year": 1939,
+      "pages": 20,
+      "text_characters": 10449
+    },
+    {
+      "file": "your-year-1940-interior.pdf",
+      "year": 1940,
+      "pages": 20,
+      "text_characters": 10649
+    },
+    {
+      "file": "your-year-1941-interior.pdf",
+      "year": 1941,
+      "pages": 20,
+      "text_characters": 10445
+    },
+    {
+      "file": "your-year-1942-interior.pdf",
+      "year": 1942,
+      "pages": 20,
+      "text_characters": 10729
+    },
+    {
+      "file": "your-year-1943-interior.pdf",
+      "year": 1943,
+      "pages": 20,
+      "text_characters": 10586
+    },
+    {
+      "file": "your-year-1944-interior.pdf",
+      "year": 1944,
+      "pages": 20,
+      "text_characters": 10296
+    },
+    {
+      "file": "your-year-1945-interior.pdf",
+      "year": 1945,
+      "pages": 20,
+      "text_characters": 10292
+    },
+    {
+      "file": "your-year-1946-interior.pdf",
+      "year": 1946,
+      "pages": 20,
+      "text_characters": 10289
+    },
+    {
+      "file": "your-year-1947-interior.pdf",
+      "year": 1947,
+      "pages": 20,
+      "text_characters": 10282
+    },
+    {
+      "file": "your-year-1948-interior.pdf",
+      "year": 1948,
+      "pages": 20,
+      "text_characters": 10288
+    },
+    {
+      "file": "your-year-1949-interior.pdf",
+      "year": 1949,
+      "pages": 20,
+      "text_characters": 10775
+    },
+    {
+      "file": "your-year-1950-interior.pdf",
+      "year": 1950,
+      "pages": 20,
+      "text_characters": 11365
+    },
+    {
+      "file": "your-year-1951-interior.pdf",
+      "year": 1951,
+      "pages": 20,
+      "text_characters": 11234
+    },
+    {
+      "file": "your-year-1952-interior.pdf",
+      "year": 1952,
+      "pages": 20,
+      "text_characters": 11231
+    },
+    {
+      "file": "your-year-1953-interior.pdf",
+      "year": 1953,
+      "pages": 20,
+      "text_characters": 11229
+    },
+    {
+      "file": "your-year-1954-interior.pdf",
+      "year": 1954,
+      "pages": 20,
+      "text_characters": 11233
+    },
+    {
+      "file": "your-year-1955-interior.pdf",
+      "year": 1955,
+      "pages": 20,
+      "text_characters": 11191
+    },
+    {
+      "file": "your-year-1956-interior.pdf",
+      "year": 1956,
+      "pages": 20,
+      "text_characters": 11234
+    },
+    {
+      "file": "your-year-1957-interior.pdf",
+      "year": 1957,
+      "pages": 20,
+      "text_characters": 11234
+    },
+    {
+      "file": "your-year-1958-interior.pdf",
+      "year": 1958,
+      "pages": 20,
+      "text_characters": 11233
+    },
+    {
+      "file": "your-year-1959-interior.pdf",
+      "year": 1959,
+      "pages": 20,
+      "text_characters": 11230
+    },
+    {
+      "file": "your-year-1960-interior.pdf",
+      "year": 1960,
+      "pages": 20,
+      "text_characters": 11363
+    },
+    {
+      "file": "your-year-1961-interior.pdf",
+      "year": 1961,
+      "pages": 20,
+      "text_characters": 11231
+    },
+    {
+      "file": "your-year-1962-interior.pdf",
+      "year": 1962,
+      "pages": 20,
+      "text_characters": 11232
+    },
+    {
+      "file": "your-year-1963-interior.pdf",
+      "year": 1963,
+      "pages": 20,
+      "text_characters": 11495
+    },
+    {
+      "file": "your-year-1964-interior.pdf",
+      "year": 1964,
+      "pages": 20,
+      "text_characters": 11498
+    },
+    {
+      "file": "your-year-1965-interior.pdf",
+      "year": 1965,
+      "pages": 20,
+      "text_characters": 11463
+    },
+    {
+      "file": "your-year-1966-interior.pdf",
+      "year": 1966,
+      "pages": 20,
+      "text_characters": 11502
+    },
+    {
+      "file": "your-year-1967-interior.pdf",
+      "year": 1967,
+      "pages": 20,
+      "text_characters": 11504
+    },
+    {
+      "file": "your-year-1968-interior.pdf",
+      "year": 1968,
+      "pages": 20,
+      "text_characters": 11503
+    },
+    {
+      "file": "your-year-1969-interior.pdf",
+      "year": 1969,
+      "pages": 20,
+      "text_characters": 11501
+    },
+    {
+      "file": "your-year-1970-interior.pdf",
+      "year": 1970,
+      "pages": 20,
+      "text_characters": 11672
+    }
+  ]
+}

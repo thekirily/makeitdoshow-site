@@ -1,0 +1,23 @@
+{
+  "unconfigured_visit_storage": {
+    "id": "62ca1951-ccba-42a8-bfb5-77dc48527a93",
+    "film": "film01",
+    "door": "qr",
+    "source": "youtube",
+    "referrer_host": "",
+    "attribution": "explicit_film_door",
+    "is_new": true,
+    "last_seen": 1794063528809
+  },
+  "events_without_prior_consent": [
+    "visit_started",
+    "$pageview"
+  ],
+  "optout_stops_events": true,
+  "optout_clears_visit": false,
+  "sale_events_without_analytics_permission": [
+    "order_paid"
+  ],
+  "source_commit": "b878192",
+  "scope": "Real Chrome, baseline served from git archive; all configured capture requests intercepted. Sale is a fixture, no purchase."
+}
